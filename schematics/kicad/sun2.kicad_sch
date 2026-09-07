@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "67ee2072-0b57-4a50-8537-b17b5f651e89")
+	(paper "USLetter")
+	(lib_symbols)
+	(sheet
+		(at 34.29 35.56)
+		(size 38.1 59.69)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0")
+		(property "Sheetname" "CPU"
+			(at 34.29 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sun2_cpu.kicad_sch"
+			(at 34.29 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sun2"
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
