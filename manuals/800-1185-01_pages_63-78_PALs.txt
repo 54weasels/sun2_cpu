@@ -1,0 +1,756 @@
+--- Page 63 ---
+
+Appendix B
+
+PALs
+
+For information on PALASM, refer to the MMI PAL Programmable Array Logic Handbook, 3rd
+edition.
+
+Source code from PALASM with pinout is on the following pages.
+
+Table B-1: CPU PALs SUMMARY
+
+```
+U #    type    checksum       function                   part #       page #
+==============================================================================
+U211   20X10   7A93           Timer Controller        520-1123-01     B-2
+U212   20L10   7F80           DVMA Decoder            520-1122-01     B-4
+U213   16R4    512A           DVMA Controller         520-1119-01     B-6
+U316   16R4    2A01           Statistics Bit Logic    520-1120-01     B-8
+U415   16R6    65B0           RTC/Waitgen             520-1125-01     B-10
+U602   16R8    47A2           DCP Interface           520-1121-01     B-13
+U718   16R4A   524B           P1 Arbitration          520-1124-01     B-15
+```
+
+28 September 1984                Confidential - DO NOT COPY                B-1
+
+--- Page 64 ---
+
+Sun-2/120 CPU Board
+
+```
+pal20x10
+Rev 1.1             Wed Jul 4 1984                       JM
+U211            Timer Controller Pal for 120 cpu board
+Sun Microsystems Inc, Mt View CA
+c100 /c200 /por sysb /sds /initin notused /ren /p.halt /as tin gnd
+/oe /timeout /t /init /rreq /q5 /q4 /q3 /q2 /q1 /q0 vcc
+
+;
+;       Macros
+;
+#define Q7-     /t
+#define Q6-     /rreq
+#define CY4     c200
+#define CY8     CY4 * q0
+#define CY16    CY8 * q1
+#define CY32    CY16 * q2
+#define CY64    CY32 * q3
+#define CY128   CY64 * q4
+#define CY256   CY128 * q5
+#define CY512   CY256 * /Q6-
+#define CY1024  CY512 * /Q7-
+
+q0      := q0 + por :+:             ; C400
+           CY4 * /por
+
+q1      := q1 + por :+:             ; C800
+           CY8 * /por
+
+q2      := q2 + por :+:             ; C1600
+           CY16 * /por
+
+q3      := q3 + por :+:             ; C3200
+           CY32 * /por
+
+q4      := q4 + por :+:             ; C6400
+           CY64 * /por
+
+q5      := q5 + por :+:             ; C12800
+           CY128 * /por
+
+rreq    := rreq * /ren +
+           CY256 * /ren
+
+init    := init + por :+:
+           ;
+           ; watchdog reset!
+           ;
+           CY256 * p.halt * /sds * /sysb
+             * /por
+
+t       := t * as :+:
+           CY128 * as
+
+timeout := timeout * as +
+           tin * as
+
+function table
+c100
+  /c200 /por sysb /sds notused
+       notused /ren /p.halt /as tin
+```
+
+B-2                    Confidential - DO NOT COPY                    28 September 1984
+
+--- Page 65 ---
+
+Sun-2/120 CPU Board
+
+```
+                /oe
+                          /timeout /t /init /rreq
+                                  /q5 /q4 /q3 /q2 /q1 /q0
+-----------------------------------------
+c llxhx xllhl   l      hhlh     llllll
+c llxhx xhlhl   l      hhll     llllll
+c llxhx xhlll   l      hlll     llllll
+c lhxhx xhllh   l      lhhl     hhhhhh
+c llxhx xllll   l      lhlh     llllll
+c lhxlx xhlll   l      llll     hhhhhh
+c llxhx xllll   l      lllh     llllll
+c lhxhx xlhll   l      lhlh     hhhhhh
+c lhxhx xllll   l      lhlh     hhhhhl
+c lhxhx xllhl   l      hhlh     hhhhlh
+-----------------------------------------
+
+description
+```
+
+28 September 1984                Confidential - DO NOT COPY                B-3
+
+--- Page 66 ---
+
+Sun-2/120 CPU Board
+
+```
+pal20l10
+Rev 1.1         Aug 15 1984                      JM
+U212            DVMA Decoder Pal for 120 cpu board
+Sun Microsystems Inc, Mt View CA
+/p1.a18 /p1.a19 /p1.a0 /p1.bhen /p1.mrdc /p1.mrwc
+/proterr en.dvma c.s7 parerr /mrdc gnd
+/iorc /ce.word /ce.byte /p1.xack /p.uds /p.lds
+/p.wr /xen /xreq /aen /pltop vcc
+
+ce.word = aen * p.lds +                   ; CPU CYCLE (R/W LOW BYTE/WORD)
+          aen * p.wr +                    ; CPU (WRITE)
+          xen * p.lds                     ; DVMA CYCLE (R/W LOW BYTE/WORD)
+
+        ;
+ce.byte = aen * /p.lds * p.uds * /p.wr +  ; CPU CYCLE (READ UPPER BYTE)
+          xen * /p.lds * p.uds            ; DVMA CYCLE (R/W UPPER BYTE)
+
+pltop   = /xen * mrdc +                   ; NON-DVMA MRDC CYCLE
+          /xen * iorc +                   ; NON-DVMA IORC CYCLE
+          xen * p.wr                      ; DVMA WRITE CYCLE CONDITION
+
+; ASSERTED ON DVMA CYCLES ONLY
+if ( xen ) p.wr = p1.mrwc * /p1.mrdc * /c.s7 +  ; SET
+                  p.wr * /p1.mrdc               ; HOLD
+
+; ASSERTED ON DVMA CYCLES ONLY
+if ( xen ) p.lds = /p1.a0 * xreq * xen +        ; EVEN BYTE
+                   p1.bhen * xreq * xen +       ; WORD
+                   p.lds * p1.mrwc              ; HOLD
+
+; ASSERTED ON DVMA CYCLES ONLY
+if ( xen ) p.uds = p1.a0 * xreq * xen +         ; ODD BYTE
+                   p1.bhen * xreq * xen +       ; WORD
+                   p.uds * p1.mrwc              ; HOLD
+
+; ASSERTED ON DVMA CYCLES ONLY
+if ( xen ) p1.xack = c.s7 * p1.mrdc * /proterr * /parerr + ; DVMA READ CYCLE
+                     c.s7 * p1.mrwc * /p1.mrdc * /proterr  ; DVMA WRITE CYCLE
+
+xreq    = en.dvma * /p1.a19 * /p1.a18 * p1.mrwc * /aen * /xen +        ; SET
+          xreq * p1.mrwc                                               ; HOLD
+
+function table
+/p1.a18 /p1.a19 /p1.a0 /p1.bhen /p1.mrdc /p1.mrwc
+       /proterr en.dvma c.s7 parerr /mrdc /iorc
+               /ce.word /ce.byte /p1.xack /p.uds /p.lds
+                       /p.wr /xen /xreq /aen /pltop
+----------------------------------------------------------------------
+llxlhh  hlllll  hhzzz   zhhhl
+llxlhl  hlllll  lhzll   hhhll
+hlxlhl  hlllhl  lhzhl   hhhll
+hhxlhl  hllllh  hlzlh   hhhll
+hhxlhl  hhllhh  hhzhh   hhhlh
+hhxlhl  hhllxx  lhzll   lhhlx
+hhxlhl  hhllxx  lhzhl   lhhlx
+hhxlhl  hhllxx  lhzlh   lhhlx
+hhxlhl  hhllxx  hhzhh   lhlhx
+hhhlhl  hhllxx  hhzzz   zhlhx
+hhhlhl  hhllxx  lhhll   lllhl
+hhhlhl  hhhlxx  lhlll   lllhl
+```
+
+B-4                    Confidential - DO NOT COPY                    28 September 1984
+
+--- Page 67 ---
+
+Sun-2/120 CPU Board
+
+```
+hhhlhl  hhhlxx  lhlll  lllhl
+llxlhh  hhllxx  hhhhh  llhhl
+llxlhh  hhllxx  hhzzz  zhhhx
+hhlhll  hhllxx  hhzzz  zhlhx
+hhlhll  hhllxx  hlhlh  hllhh
+hhlhll  hhllxx  hlhlh  hllhh
+hhlhll  hhhlxx  hlllh  hllhh
+hhlhll  hhhlxx  hlllh  hllhh
+llhhhh  hhllxx  hhhhh  hlhhh
+llhhhh  hhllxx  hhzzz  zhhhx
+--------------------------------------------------------------------------
+description
+```
+
+28 September 1984                 Confidential — DO NOT COPY                 B-5
+
+--- Page 68 ---
+
+Sun-2/120 CPU Board
+
+```
+pal16r4
+Rev 1.1         Wed Aug 15 1984                 JM
+U213            DVMA Controller Pal for 120 cpu board
+Sun Microsystems Inc, Mt View CA
+c100 sysb /ben /sack /sas /p.bg /xreq /rreq /sds gnd
+/oe /p.back /p.br /xberr /xhalt /ren /xen fcl /p.as vcc
+
+
+p.back  = ren +
+          xen
+
+p.br    = xreq * /p.back +
+          rreq * /p.back
+
+if ( p.back ) /fcl = xen                      ; SUPERVISOR DATA FOR XDMA
+
+if ( p.back ) p.as = sack * ren +
+                     sack * xen * xreq
+
+xen       := /xen * /ren * p.bg * /sas * /rreq * sds +    ; SET
+             xen * sds                                    ; CLEAR
+
+ren       := /xen * /ren * p.bg * /sas * rreq +   ; STATE 0
+             ren * /sack +                        ; STATE 1
+             ren * /sas                           ; STATE 2
+
+xberr     := sds * sysb * xhalt +                 ; SET ON MULTIBUS DEADLOCK
+             rreq * /ben * sysb * xhalt +         ; SET ON REFRESH DEADLOCK
+             xberr * sas                          ; HOLD
+
+          ;ASSERT XHALT-
+          ;
+xhalt     := sds * sysb +                         ; SET ON MULTIBUS DEADLOCK
+             rreq * /ben * sysb +                 ; SET ON REFRESH DEADLOCK
+             xberr                                ; XBERR PLUS ONE STATE
+
+function table
+
+c100
+  sysb /ben /sack /sas
+        /p.bg /xreq /rreq /sds /oe
+                /p.back /p.br /xberr /xhalt
+                        /ren /xen fcl /p.as
+------------------------------------------------
+c lhhh  hhhhl   xhhx    xhzz
+c lhhh  hhhhl   xhhh    xhzz
+c lhhl  hllll   xxhh    xhzz
+c lhhl  lllll   xxhh    xhzz
+c lhhh  lllll   lhhh    lhhh
+c lhhh  lllll   lhhh    lhhh
+c lhlh  llhll   lhhh    lhhl
+c lhll  hlhll   hlhh    hhhh
+c lhll  hlhll   hlhh    hhhh
+c lhlh  hlhll   hlhh    hhzz
+c lhhh  llhll   lhhh    hllh
+c lhhh  llhll   lhhh    hllh
+c lhlh  hlhll   lhhh    hlll
+c lhll  hlhll   lhhh    hlll
+c lhll  hhhhl   hhhh    hhhh
+c lhlh  hhhhl   hhhh    hhzz
+```
+
+B-6                 Confidential — DO NOT COPY                 28 September 1984
+
+--- Page 69 ---
+
+Sun-2/120 CPU Board
+
+```
+c lhhh  hhhhl   hhhh    hhzz
+c lhhh  hhhll   hhhh    hhzz
+c hhhh  hhhll   hhhl    hhzz
+c hhhh  hhhll   hhll    hhzz
+c hhhh  hhhll   hhll    hhzz
+c lhhh  hhhll   hhhl    hhzz
+c lhhh  hhhll   hhhh    hhzz
+c lhhh  hhlhl   hlhh    hhzz
+c hhhh  hhlhl   hlhl    hhzz
+c hhhh  hhlhl   hlll    hhzz
+c hhhh  hhlhl   hlll    hhzz
+c lhhh  hhlhl   hlhl    hhzz
+c lhhh  hhhhl   hhhh    hhzz
+c hlhh  hhlhl   hlhh    hhzz
+c lhhh  hhhhl   hhhh    hhzz
+c hhhh  hhhhl   hhhh    hhzz
+c hhhh  hhhll   hhhl    hhzz
+c lhhh  hhhhl   hhhh    hhzz
+c lhhl  hllll   hlhh    hhzz
+c lhhl  lllll   hlhh    hhzz
+
+------------------------------------------------
+
+description
+```
+
+September 1984                 Confidential — DO NOT COPY                 B-7
+
+--- Page 70 ---
+
+Sun-2/120 CPU Board
+
+```
+pal16r4
+Rev 1.0         Thu Jun 28 1984                 JM
+U316            Statistic Bit Logic Pal for 120 cpu board
+Sun Microsystems Inc, Mt View CA
+c.s5c type1 type0 mod en read p.fc0 p.fc1 /booten gnd
+/c.s6 c.s5 /p.back acc. mod. type0. type1. acc /dis vcc
+
+
+/type1. := /type1                         ; write back
+
+/type0. := /type0                         ; write back
+
+/acc. := /acc * /en * /dis +              ; keep old acc when not enabled
+         /acc * dis                       ; keep old acc when disabled
+
+/mod. := /mod * read * en * /dis +        ; keep mod value on read cycles
+         /mod * /en * /dis +              ; old value if not enabled
+         /mod * dis                       ; old value if disabled
+
+dis =    p.fc0 * p.fc1 * /p.back +        ; mmu reference
+         p.fc1 * p.back +                 ; refresh reference
+         booten
+
+
+function table
+
+c.s5c type1 type0 mod en
+        read p.fc0 p.fc1 /booten /p.back
+                /c.s6 c.s5 acc. mod.
+                        type0. type1. acc /dis
+------------------------------------------------------------
+lxxxh   xxxlx   hlzz    zzxl
+lxxxh   xxxlx   hhzz    zzxl
+lxxxh   xxxlx   hlzz    zzxl
+lxxxh   xllhx   hlzz    zzxh
+lxxxh   xllhx   hhzz    zzxh
+lxxxh   xhlhx   hlzz    zzxh
+lxxxh   xhlhx   hhzz    zzxh
+lxxxh   xlhhx   hlzz    zzxl
+lxxxh   xlhhx   hhzz    zzxl
+lxxxh   xhhhx   hlzz    zzxl
+lxxxh   xhhhx   hhzz    zzxl
+lxxxh   xhhhx   hlzz    zzxl
+lxxxh   xllhx   hlzz    zzxh
+clllh   hllhx   hlzz    zzlh
+llllh   hllhx   hhzz    zzlh
+llllh   hllhx   lhhl    lllh
+clhhh   hllhx   hlzz    zzhh
+llhhh   hllhx   hhzz    zzhh
+llhhh   hllhx   lhhh    hlhh
+chllh   lllhx   hlzz    zzlh
+lhllh   lllhx   hhzz    zzlh
+lhllh   lllhx   lhhh    lhlh
+chhhh   lllhx   hlzz    zzhh
+lhhhh   lllhx   hhzz    zzhh
+lhhhh   lllhx   lhhh    hhhh
+cllll   hllhx   hlzz    zzlh
+lllll   hllhx   hhzz    zzlh
+lllll   hllhx   lhll    lllh
+clhhl   lllhx   hlzz    zzhh
+```
+
+B-8                 Confidential — DO NOT COPY                 28 September 1984
+
+--- Page 71 ---
+
+Sun-2/120 CPU Board
+
+```
+        llhhl   lllhx   hhzz    zzhh
+        llhhl   lllhx   lhhh    hlhh
+        lhllh   hhhhx   hlzz    zzll
+        chllh   hhhhx   hlzz    zzll
+        lhllh   hhhhx   hhzz    zzll
+        lhllh   hhhhx   lhll    lhll
+        lhhhh   lllhx   hlzz    zzhh
+        lhhhh   lhhhx   hlzz    zzhl
+        chhhh   lhhhx   hlzz    zzhl
+        lhhhh   lhhhx   hhzz    zzhl
+        lhhhh   lhhhx   lhhh    hhhl
+        lhhhh   lllhx   hlzz    zzhh
+        ------------------------------------------------------------
+```
+
+description
+
+
+
+28 September 1984               Confidential - DO NOT COPY                      B-9
+
+--- Page 72 ---
+
+Sun-2/120 CPU Board
+
+```
+pal16r6                         u415                    PAL DESIGN SPECIFICATION
+120 CPU BOARD                                           KB 06/12/84
+I/O ACKNOWLEDGE AND TOD RD/WR CONTROL SIGNAL GENERATOR
+SUN MICROSYSTEMS
+
+/CLK100 MA14 MA13 MA12 MA11 /RDIO /WRIO CS7 CS5 GND
+GND /RDRTC /IOACK NC IQ0 IQ1 IQ2 IQ3 /WRRTC VCC
+
+IF (VCC) RDRTC = /MA14 * MA13 * MA12 * MA11 * RDIO * CS7   ;58167 read strobe
+
+IF (VCC) WRRTC = /MA14 * MA13 * MA12 * MA11 * WRIO *       ;58167 write strobe
+                                         CS7 * /IOACK      ;which goes inactive
+                                                           ;when IOACK active
+
+                ;RD / WR ACK for the Parallel Port ( 2 wait states )
+        IOACK:= /MA14 * /MA13 * MA12 * MA11 * RDIO * CS5 +
+                /MA14 * /MA13 * MA12 * MA11 * WRIO * CS5 +
+
+                ;RD / WR ACK for PROM, SCC, Timer  ( 2 wait states )
+                /MA14 * /MA12 * RDIO * CS5 +
+                /MA14 * /MA12 * WRIO * CS5 +
+
+                ;RD /WR ACK for 58167 when the counter is equal to 10 or 11
+                ; ( 12 wait states )
+                /MA14 * MA13 * MA12 * MA11 * RDIO * IQ3 * /IQ2 * IQ1 * CS5 +
+                /MA14 * MA13 * MA12 * MA11 * WRIO * IQ3 * /IQ2 * IQ1 * CS5
+
+        /IQ0 := /CS5 +                                      ; reset
+                 CS5 *  IQ0 * /IOACK +                      ; toggle
+                 CS5 * /IQ0 *  IOACK                        ; hold at eleven
+
+        /IQ1 := /CS5 +                                      ; reset
+                 CS5 * /IQ1 * /IQ0 +                        ; hold
+                 CS5 *  IQ1 *  IQ0 * /IOACK +               ; toggle
+                 CS5 * /IQ1 *  IOACK                        ; hold at eleven
+
+        /IQ2 := /CS5 +                                      ; reset
+                 CS5 * /IQ2 * /IQ0 +                        ; hold
+                 CS5 * /IQ2 * /IQ1 +                        ; hold
+                 CS5 *  IQ2 *  IQ1 *  IQ0 * /IOACK +        ; toggle
+                 CS5 * /IQ2 *  IOACK                        ; hold at eleven
+
+        /IQ3 := /CS5 +                                      ; reset
+                 CS5 * /IQ3 * /IQ0 +                        ; hold
+                 CS5 * /IQ3 * /IQ1 +                        ; hold
+                 CS5 * /IQ3 * /IQ2 +                        ; hold
+                 CS5 *  IQ3 *  IQ2 * IQ1 * IQ0 * /IOACK +   ; toggle
+                 CS5 * /IQ3 *  IOACK                        ; hold at eleven
+
+function table
+
+/CLK100 /RDIO /WRIO MA14 MA13 MA12 MA11 CS7 CS5            ; inputs
+/IOACK /RDRTC /WRRTC IQ3 IQ2 IQ1 IQ0                       ; outputs
+
+;/  / /                       / / /
+;C  R W  M M M M  C C         I R W  I I I I
+;L  D R  A A A A  S S         O D R  Q Q Q Q
+;K  I I  1 1 1 1  7 5         A R R  3 2 1 0
+;   O O  4 3 2 1              C T T
+```
+
+B-10                            Confidential - DO NOT COPY                      28 September 1984
+
+--- Page 73 ---
+
+Sun-2/120 CPU Board
+
+```
+;                             K C C
+--------------------------------------------------------------------------------
+c  x x  x x x x  l l      h h h  l l l l      ; idle state
+c  h h  l l h h  l h      h h h  l l l h      ;setup parallel port rd or wr ioack
+c  l h  l l h h  l h      l h h  l l h l      ;read port
+c  l h  l l h h  l l      h h h  l l l l      ;end read port
+c  h l  l l h h  l h      l h h  l l l h      ;write port
+c  h l  l l h h  l l      h h h  l l l l      ;end write port
+c  h h  l x l x  l h      h h h  l l l h      ;setup prom scc timer ioack
+c  l h  l x l x  l h      l h h  l l h l      ;read prom scc timer
+c  h l  l x l x  l h      l h h  l l h l      ;write prom scc timer
+c  x x  x x x x  l l      h h h  l l l l      ; idle state
+c  h h  l h h h  l l      h h h  l l l l      ;setup for 58167 operation
+c  l h  l h h h  l h      h h h  l l l h      ;read wait 1
+c  l h  l h h h  h h      h l h  l l h l      ;wait 2
+c  l h  l h h h  h h      h l h  l l h h      ;3
+c  l h  l h h h  h h      h l h  l h l l      ;4
+c  l h  l h h h  h h      h l h  l h l h      ;5
+c  l h  l h h h  h h      h l h  l h h l      ;6
+c  l h  l h h h  h h      h l h  l h h h      ;7
+c  l h  l h h h  h h      h l h  h l l l      ;8
+c  l h  l h h h  h h      h l h  h l l h      ;9
+c  l h  l h h h  h h      h l h  h l h l      ;10
+c  l h  l h h h  h h      l l h  h l h h      ;hold 11 ioack
+c  h h  h h h h  h h      h h h  h l h h      ;let counter continue
+c  h h  h h h h  h h      h h h  h h l l      ; to fully test the
+c  h h  h h h h  h h      h h h  h h l h      ; counter
+c  h h  h h h h  h h      h h h  h h h l      ;
+c  h h  h h h h  h h      h h h  h h h h      ;
+c  h h  h h h h  h h      h h h  l l l l      ;
+c  h h  h h h h  h h      h h h  l l l h      ;
+c  h h  h h h h  l l      h h h  l l l l      ;clear counter with cs5
+c  h h  l h h h  l l      h h h  l l l l      ;setup for 58167 operation
+c  h l  l h h h  l h      h h h  l l l h      ;write wait 1
+c  h l  l h h h  h h      h h l  l l h l      ;wait 2
+c  h l  l h h h  h h      h h l  l l h h      ;3
+c  h l  l h h h  h h      h h l  l h l l      ;4
+c  h l  l h h h  h h      h h l  l h l h      ;5
+c  h l  l h h h  h h      h h l  l h h l      ;6
+c  h l  l h h h  h h      h h l  l h h h      ;7
+c  h l  l h h h  h h      h h l  h l l l      ;8
+c  h l  l h h h  h h      h h l  h l l h      ;9
+c  h l  l h h h  h h      h h l  h l h l      ;10
+c  h l  l h h h  h h      l h h  h l h h      ;hold 11 - remove wrrtc
+c  h l  l h h h  l l      h h h  l l l l      ;end operation
+c  x x  x x x x  l l      h h h  l l l l      ; idle
+--------------------------------------------------------------------------------
+```
+
+description:
+IQ0:3 - This is a four bit counter that is enabled when CS5 is active.
+        The counter is used to issue the 58167 IOACK signal on state 11
+        (68010 state S27 and S28) which is used to negate the WRRTC write strobe
+        signal from state 11 on. The WRRTC signal is negated at this time
+        to allow for data and address hold times.
+
+IOACK - This is the DTACK signal for the 58167, 9513, 8530A, PROM, and Parallel
+        Port. IOACK is issued at S27:28 for the 58167 and at S7:8 for the
+        other devices. This adds 12 wait-states for the 58167 and two for
+        all others.
+
+28 September 1984               Confidential - DO NOT COPY                      B-11
+
+--- Page 74 ---
+
+Sun-2/120 CPU Board
+
+WRRTC - 58167 write strobe. Begins at S7 and ends at S27.
+
+RDRTC - 58167 read strobe. Begins at S7 and ends at S0 of the next cycle.
+
+B-12                            Confidential - DO NOT COPY                      28 September 1984
+
+--- Page 75 ---
+
+Sun-2/120 CPU Board
+
+```
+pal16r8          u602                          dcpctl
+         Rev 0.1         Aug 15 1984           JM
+                 120 CPU DCP control pal
+ JM      Sun Microsystems Inc          Mt View, CA
+clk /sanity vcc vcc /wrdcp /rddcp vcc lal vcc gnd
+/oe /mas /mds q0 /x400 /x200 /ack q1 q2 vcc
+
+ack := /q2 * q1 * /sanity +
+       q2 * /q1 * q0 * x200 * /sanity +
+       q1 * /q0 * /x200 * /sanity
+
+mds := q2 * /q1 * q0 * x200 * /sanity +
+       q2 * q1 * /q0 * /sanity +
+       q2 * q1 * /x200 * /x400 * /lal * rddcp * /sanity +
+       q2 * q1 * /x200 * /x400 * /lal * wrdcp * /sanity
+
+mas := /q2 * q1 * q0 * /sanity +
+       q1 * q0 * lal * rddcp * /sanity +
+       q1 * q0 * lal * wrdcp * /sanity
+
+/q2 := /q2 * q1 * q0 * /sanity +
+       q1 * q0 * lal * rddcp * /sanity +
+       q1 * q0 * lal * wrdcp * /sanity
+
+/q1 := q2 * /q1 * q0 * x200 * /sanity +
+       q2 * q1 * /q0 * /x200 * /sanity
+
+/q0 := /q2 * q1 * q0 * /sanity +
+       q2 * q1 * /q0 * x200 * /sanity +
+       q1 * q0 * /x200 * /x400 * /lal * rddcp * /sanity +
+       q1 * q0 * /x200 * /x400 * /lal * wrdcp * /sanity
+
+x400 := x400 * x200 * /sanity +
+        /x400 * /x200 * /sanity
+
+x200 := /x200 * /sanity
+
+function table
+
+clk /oe /sanity
+        /rddcp /wrdcp lal
+               /x400 /x200
+                     q2 q1 q0
+                             /mas /mds /ack
+
+;c c i  i i i  s s   s s s   o o o
+-------------------------------------------------------------------
+                                     ;reset
+c l l   x x x  h h   h h h   h h h   ;STATE idle
+l h x   x x x  z z   z z z   z z z   ; check tristate enable
+;
+;       MAS- Read Cycle
+;
+c l h   l h h  l l   l h h   l h h   ;STATE strobemas
+c l h   x x x  l h   l h l   l h l   ;STATE mas_dtack
+c l h   x x x  h l   h h h   h h l   ;STATE idle
+c l h   h h x  h h   h h h   h h h   ;STATE idle
+;
+;       MAS- Write Cycle
+;
+
+28 September 1984               Confidential — DO NOT COPY                   B-13
+```
+
+--- Page 76 ---
+
+Sun-2/120 CPU Board
+
+```
+c l h   h l h  l l   l h h   l h h   ;STATE strobemas
+c l h   x x x  l h   l h l   l h l   ;STATE mas_dtack
+c l h   x x x  h l   h h h   h h l   ;STATE idle
+c l h   h h x  h h   h h h   h h h   ;STATE idle
+;
+;       MDS- Read Cycle
+;
+c l h   l h l  l l   h h l   h l h   ;STATE strobemds
+c l h   x x x  l h   h h l   h l h   ; stay here for 1 more clock
+c l h   x x x  h l   h l h   h l l   ;STATE mas_dtack
+c l h   x x x  h h   h l h   h l l   ; stay here for 1 more clock
+c l h   h h x  l l   h h h   h h h   ;STATE idle
+;
+;       MDS- Write Cycle
+;
+c l l   x x x  h h   h h h   h h h   ;STATE idle (reset)
+c l h   h l l  l l   h h l   h l h   ;STATE strobemds
+c l h   x x x  l h   h h l   h l h   ; stay here for 1 more clock
+c l h   x x x  h l   h l h   h l l   ;STATE mas_dtack
+c l h   x x x  h h   h l h   h l l   ; stay here for 1 more clock
+c l h   h h x  l l   h h h   h h h   ;STATE idle
+
+-------------------------------------------------------------------
+;c c i  i i i  s s   s s s   o o o
+
+;ll -> lh -> hl -> hh
+
+description:
+```
+
+B-14                            Confidential — DO NOT COPY                   28 September 1984
+
+--- Page 77 ---
+
+Sun-2/120 CPU Board
+
+```
+pal16r4          u718                          arb
+         Rev 1.2         Jun  6 1984           JM
+                 120 CPU P1 Bus (MULTIBUS) Arbiter
+         Sun Microsystems Inc          Mt View, CA
+clk /p1bprn /p1init sysb /test vcc vcc vcc vcc gnd
+/oe /p1breq /p1cbrq /cbrqo q0 q1 /aen /p1busy /p1bpro vcc
+
+p1bpro  = q1 * q0 * p1bprn * /p1init
+
+if( aen ) p1busy = aen
+
+if( cbrqo ) p1cbrq = cbrqo
+
+p1breq  = /q1 * /p1init +
+          /q0 * /p1init
+
+cbrqo := q1 * /q0 * p1busy * /p1init +
+         q1 * /q0 * /p1bprn * /p1init +
+         q1 * q0 * sysb * /p1init
+
+aen := /q1 * q0 * /p1init +
+       /q1 * sysb * /p1init +
+       /q0 * /test * sysb * /p1busy * p1bprn * /p1init
+
+/q1 := /q1 * /p1cbrq * p1bprn * /p1init +
+       /q1 * q0 * /p1init +
+       /q1 * sysb * /p1init +
+       q1 * /q0 * /p1busy * p1bprn * /p1init
+
+/q0 := /q1 * /q0 * /p1cbrq * p1bprn * /p1init +
+       q1 * /q0 * p1busy * /p1init +
+       q1 * /q0 * /p1bprn * /p1init +
+       sysb * /p1init
+
+function table
+
+clk /oe /test
+        /p1init /p1bprn sysb
+                /p1cbrq /p1busy
+                        /p1breq /p1bpro
+                                /cbrqo /aen
+                                       q1 q0
+
+-------------------------------------------------------------------
+                                                ;reset
+c l l   l x x   z z     h h     h h     h h     ;STATE idle
+l h l   x x x   z z     h h     z z     z z     ; check tristate enable
+l l l   h h l   z z     h h     h h     h h     ; check tristate outs
+l l l   h h l   z z     h h     h h     h h     ; check bprn-
+l l l   h l l   z z     h l     h h     h h     ; check bprn-
+c l l   h h l   z z     h h     h h     h h     ; check sysb
+;
+c l l   h h h   l l     l h     l h     h l     ;STATE requestbus
+c l l   h l l   l l     l h     l h     h l     ; busy, got priority
+c l l   h h l   l h     l h     l h     h l     ; not busy, no priority
+;
+c l l   h l h   z h     l h     h h     l l     ;STATE havebus
+c l l   h l h   l l     l h     h l     l l     ; busy is driven
+c l l   h l l   h l     l h     h h     l l     ; busy is driven
+c l l   h h l   h h     h h     h h     h h     ; check bprn- . sysb
+
+28 September 1984               Confidential — DO NOT COPY                   B-15
+```
+
+--- Page 78 ---
+
+Sun-2/120 CPU Board
+
+```
+;
+c l l   h h l   z z     h h     h h     h h     ;STATE idle
+c l l   h h h   l l     l h     l h     h l     ;STATE requestbus
+c l l   h l h   z h     l h     h h     l l     ;STATE havebus
+c l l   h l h   z l     l h     h l     l l     ; busy is driven
+c l l   h l l   l h     h l     h h     h h     ; check cbrq- . sysb
+;
+c l l   h h l   z z     h h     h h     h h     ;STATE idle
+c l l   h h h   l l     l h     l h     h l     ;STATE requestbus
+c l l   h l l   z h     l h     h h     l h     ;STATE holdbus
+c l l   h l l   z l     l h     h l     l h     ; busy is driven
+c l l   h l h   z l     l h     h l     l l     ;STATE havebus
+c l l   h l l   l h     h l     h h     h h     ;STATE idle
+
+-------------------------------------------------------------------
+;c c    i i i   b b     o o     n n     s s
+
+description:
+```
+
+B-16                            Confidential — DO NOT COPY                   28 September 1984
