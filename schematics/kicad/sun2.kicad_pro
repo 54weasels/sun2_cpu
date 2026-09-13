@@ -416,6 +416,10 @@
     [
       "2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0",
       "CPU"
+    ],
+    [
+      "944d560b-cf26-4c91-a0ae-1ed4facdb71d",
+      "CLOCK"
     ]
   ],
   "text_variables": {}
