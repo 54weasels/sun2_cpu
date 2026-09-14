@@ -12577,16 +12577,6 @@
 		)
 		(uuid "b08fac12-c86a-4fc7-a818-d6b7d46c5910")
 	)
-	(label "P.AS\\"
-		(at 156.21 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b267b9ce-83de-4161-8e7b-4c8a5ba93a06")
-	)
 	(label "P.FC1"
 		(at 241.3 54.61 180)
 		(effects
@@ -12728,7 +12718,7 @@
 		(uuid "d12141a6-c78f-4847-96e7-066f4bc2ad25")
 	)
 	(label "P.RESET\\"
-		(at 116.84 189.23 0)
+		(at 121.92 189.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12987,15 +12977,16 @@
 		)
 		(uuid "fc455ce8-30b0-46ae-894a-59c9b1be8a71")
 	)
-	(label "P.HALT\\"
-		(at 116.84 186.69 0)
+	(hierarchical_label "P.HALT\\"
+		(shape output)
+		(at 109.22 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "ffbf58ee-36c0-4a97-a952-d4a97a0a73e9")
+		(uuid "05393d39-810d-4640-afa4-a508cb826f50")
 	)
 	(hierarchical_label "OE.ROP\\"
 		(shape input)
@@ -13381,6 +13372,17 @@
 			(justify left)
 		)
 		(uuid "a80d9a4d-1dc0-4091-8a24-f83835e1c5b2")
+	)
+	(hierarchical_label "P.AS\\"
+		(shape tri_state)
+		(at 156.21 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8624dd0-84c5-48a6-b554-d2b57b21c636")
 	)
 	(hierarchical_label "BERR"
 		(shape output)
