@@ -420,6 +420,10 @@
     [
       "944d560b-cf26-4c91-a0ae-1ed4facdb71d",
       "CLOCK"
+    ],
+    [
+      "ecd7f6d8-851f-4bf4-a445-bd7a2a0bfdc8",
+      "MMU"
     ]
   ],
   "text_variables": {}
