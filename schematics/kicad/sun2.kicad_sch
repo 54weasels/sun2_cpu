@@ -63,7 +63,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "944d560b-cf26-4c91-a0ae-1ed4facdb71d")
-		(property "Sheetname" "CLOCK"
+		(property "Sheetname" "CLOCK_DVMA"
 			(at 100.33 34.8484 0)
 			(effects
 				(font
@@ -85,6 +85,48 @@
 			(project "sun2"
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 207.01 35.56)
+		(size 36.83 58.42)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b42ede88-616c-473e-8f95-b5ba6ef10988")
+		(property "Sheetname" "PROM_RTC_REGS"
+			(at 207.01 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sun2_prom_rtc_regs.kicad_sch"
+			(at 207.01 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sun2"
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89"
+					(page "5")
 				)
 			)
 		)

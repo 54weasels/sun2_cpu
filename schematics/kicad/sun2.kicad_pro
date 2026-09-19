@@ -419,11 +419,15 @@
     ],
     [
       "944d560b-cf26-4c91-a0ae-1ed4facdb71d",
-      "CLOCK"
+      "CLOCK_DVMA"
     ],
     [
       "ecd7f6d8-851f-4bf4-a445-bd7a2a0bfdc8",
       "MMU"
+    ],
+    [
+      "b42ede88-616c-473e-8f95-b5ba6ef10988",
+      "PROM_RTC_REGS"
     ]
   ],
   "text_variables": {}

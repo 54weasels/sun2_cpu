@@ -68558,8 +68558,8 @@
 		)
 		(uuid "04d023dc-8862-4b95-913f-caa541705c15")
 	)
-	(hierarchical_label "ED.ENABLE\\"
-		(shape input)
+	(hierarchical_label "RD.ENABLE\\"
+		(shape output)
 		(at 50.8 177.8 0)
 		(effects
 			(font
@@ -68581,7 +68581,7 @@
 		(uuid "09c3db62-69e7-4737-b12e-3e4a12f52288")
 	)
 	(hierarchical_label "RD.IDPROM\\"
-		(shape input)
+		(shape output)
 		(at 50.8 170.18 0)
 		(effects
 			(font
@@ -68658,7 +68658,7 @@
 		(uuid "2aeba2f1-456e-4ce4-ab14-ae86a6a6c938")
 	)
 	(hierarchical_label "WR.ENABLE\\"
-		(shape input)
+		(shape output)
 		(at 50.8 187.96 0)
 		(effects
 			(font
@@ -68713,7 +68713,7 @@
 		(uuid "41c4e8f7-61dc-4e23-9d71-cf1f5fe43008")
 	)
 	(hierarchical_label "RD.ERROR\\"
-		(shape input)
+		(shape output)
 		(at 50.8 175.26 0)
 		(effects
 			(font
@@ -68889,7 +68889,7 @@
 		(uuid "919337aa-375b-4e76-a6a6-e271f43b68c0")
 	)
 	(hierarchical_label "WR.DIAG\\"
-		(shape input)
+		(shape output)
 		(at 50.8 182.88 0)
 		(effects
 			(font
@@ -71627,7 +71627,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b89b0f13-c9a1-4a75-ad61-2a1b19679589")
-		(property "Reference" "U1"
+		(property "Reference" "U313"
 			(at 177.546 189.23 0)
 			(effects
 				(font
@@ -71724,7 +71724,7 @@
 		(instances
 			(project "sun2"
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/ecd7f6d8-851f-4bf4-a445-bd7a2a0bfdc8"
-					(reference "U1")
+					(reference "U313")
 					(unit 1)
 				)
 			)

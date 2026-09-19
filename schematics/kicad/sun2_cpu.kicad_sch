@@ -13596,7 +13596,7 @@
 	)
 	(symbol
 		(lib_id "sun2:74F00")
-		(at -40.64 26.67 0)
+		(at -33.02 66.04 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13604,7 +13604,7 @@
 		(dnp no)
 		(uuid "016793c7-7f23-4047-b911-bfc0289057ad")
 		(property "Reference" "U102"
-			(at -40.894 25.4 0)
+			(at -33.274 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13612,7 +13612,7 @@
 			)
 		)
 		(property "Value" "74F00"
-			(at -40.894 27.94 0)
+			(at -33.274 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13620,7 +13620,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -40.64 26.67 0)
+			(at -33.02 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13629,7 +13629,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f00.pdf"
-			(at -40.64 26.67 0)
+			(at -33.02 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13638,7 +13638,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
-			(at -40.64 26.67 0)
+			(at -33.02 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13647,7 +13647,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F00N/373665"
-			(at -40.64 26.67 0)
+			(at -33.02 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18675,7 +18675,7 @@
 	)
 	(symbol
 		(lib_id "sun2:74F00")
-		(at -40.64 0 0)
+		(at -33.02 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18683,7 +18683,7 @@
 		(dnp no)
 		(uuid "a4802ca8-bc0e-439c-8d0b-b60777206f92")
 		(property "Reference" "U102"
-			(at -41.148 -1.27 0)
+			(at -33.528 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18691,7 +18691,7 @@
 			)
 		)
 		(property "Value" "74F00"
-			(at -41.148 1.27 0)
+			(at -33.528 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18699,7 +18699,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -40.64 0 0)
+			(at -33.02 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18708,7 +18708,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f00.pdf"
-			(at -40.64 0 0)
+			(at -33.02 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18717,7 +18717,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
-			(at -40.64 0 0)
+			(at -33.02 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18726,7 +18726,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F00N/373665"
-			(at -40.64 0 0)
+			(at -33.02 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
