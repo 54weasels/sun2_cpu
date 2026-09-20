@@ -11089,7 +11089,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 114.3) (xy 59.69 114.3)
+			(xy 54.61 114.3) (xy 59.69 114.3)
 		)
 		(stroke
 			(width 0)
@@ -12297,16 +12297,6 @@
 		)
 		(uuid "6bfe2035-212c-4ae6-9577-8d5af89dee3d")
 	)
-	(label "ERR"
-		(at 55.88 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6e88e4b4-8f70-4da7-8ce4-cae472fadebf")
-	)
 	(label "INT6\\"
 		(at 97.79 166.37 180)
 		(effects
@@ -13121,9 +13111,20 @@
 		)
 		(uuid "440ddcc7-c561-4b9a-a32e-9b6bef881bfa")
 	)
+	(hierarchical_label "ERR"
+		(shape output)
+		(at 54.61 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "44d5ab5c-aa72-4c9a-9603-9bc21bf22243")
+	)
 	(hierarchical_label "PARERRL\\"
 		(shape input)
-		(at 40.64 115.57 180)
+		(at 39.37 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13321,7 +13322,7 @@
 	)
 	(hierarchical_label "TIMEOUT\\"
 		(shape input)
-		(at 40.64 113.03 180)
+		(at 39.37 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13563,7 +13564,7 @@
 	)
 	(hierarchical_label "PARERRU\\"
 		(shape input)
-		(at 40.64 118.11 180)
+		(at 39.37 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13585,7 +13586,7 @@
 	)
 	(hierarchical_label "PROTERR\\"
 		(shape input)
-		(at 40.64 110.49 180)
+		(at 39.37 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20567,7 +20568,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS20")
-		(at 48.26 114.3 0)
+		(at 46.99 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20575,7 +20576,7 @@
 		(dnp no)
 		(uuid "e737568b-eb8a-4e86-8672-78c35037a799")
 		(property "Reference" "U114"
-			(at 48.006 112.522 0)
+			(at 46.736 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20583,7 +20584,7 @@
 			)
 		)
 		(property "Value" "74LS20"
-			(at 48.006 115.062 0)
+			(at 46.736 115.062 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20591,7 +20592,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 114.3 0)
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20600,7 +20601,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS20"
-			(at 48.26 114.3 0)
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20609,7 +20610,7 @@
 			)
 		)
 		(property "Description" "Dual 4-input NAND"
-			(at 48.26 114.3 0)
+			(at 46.99 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
