@@ -90,6 +90,48 @@
 		)
 	)
 	(sheet
+		(at 34.29 123.19)
+		(size 38.1 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9fd69a33-178f-4139-aa63-3515055c4d55")
+		(property "Sheetname" "RASTEROP_PARITY_P2"
+			(at 34.29 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sun2_rasterop_parity_p2.kicad_sch"
+			(at 34.29 187.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sun2"
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 207.01 35.56)
 		(size 36.83 58.42)
 		(exclude_from_sim no)

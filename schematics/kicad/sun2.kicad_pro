@@ -428,6 +428,10 @@
     [
       "b42ede88-616c-473e-8f95-b5ba6ef10988",
       "PROM_RTC_REGS"
+    ],
+    [
+      "9fd69a33-178f-4139-aa63-3515055c4d55",
+      "RASTEROP_PARITY_P2"
     ]
   ],
   "text_variables": {}
