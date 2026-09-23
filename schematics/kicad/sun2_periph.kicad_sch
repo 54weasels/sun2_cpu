@@ -1,0 +1,1122 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2ec2d7cd-9ad5-432b-b4ab-812f8de77639")
+	(paper "A4")
+	(lib_symbols
+		(symbol "74xx:74LS05"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LS05"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inverter Open Collect"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TTL not inv OpenCol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74LS05_1_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_2_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_3_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_4_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_5_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_6_0"
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector inverted
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_7_0"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LS05_7_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS05")
+		(at -16.51 134.62 0)
+		(unit 7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "096f7a41-4a12-4f8a-90c5-bcdfa48e632b")
+		(property "Reference" "U613"
+			(at -10.16 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LS05"
+			(at -10.16 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at -16.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+			(at -16.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inverter Open Collect"
+			(at -16.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+			(at -16.51 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31d5702a-6f01-4e40-b960-35d24241ec79")
+		)
+		(pin "14"
+			(uuid "8d1118b4-d957-4a20-9fca-f1dfb4980f0a")
+		)
+		(pin "12"
+			(uuid "2b28adad-fa48-407d-9237-28928eb11eaa")
+		)
+		(pin "13"
+			(uuid "db40c9bb-a1e3-4cec-b5f8-bfd5478251d1")
+		)
+		(pin "10"
+			(uuid "d8a329b7-e520-46ea-b9e3-11b129ff9808")
+		)
+		(pin "11"
+			(uuid "3005504c-51b1-4af4-a64d-8b3bba2c2ba6")
+		)
+		(pin "8"
+			(uuid "ef72336a-ad24-4203-9e06-3224e6ae32be")
+		)
+		(pin "9"
+			(uuid "c271691b-38af-46a5-998a-0adb38e098e6")
+		)
+		(pin "6"
+			(uuid "6d1aa53e-52fb-43bb-867f-759e9894e71a")
+		)
+		(pin "5"
+			(uuid "4b42808b-237f-4386-911a-7bfa8fdde6eb")
+		)
+		(pin "4"
+			(uuid "44ced146-a2c1-4320-a020-8b3f878a2e2b")
+		)
+		(pin "3"
+			(uuid "b076e6dc-6b43-4d42-9505-c93dc23caf88")
+		)
+		(pin "2"
+			(uuid "08665f5f-2d48-4359-aa25-ff277a2079ee")
+		)
+		(pin "1"
+			(uuid "57f546af-2959-4eb8-8838-ee36e3437762")
+		)
+		(instances
+			(project ""
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/8caf264c-65dd-4650-9fe1-d43351ee9f9b"
+					(reference "U613")
+					(unit 7)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS05")
+		(at 151.13 82.55 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c4679a6-fc97-44b8-9983-e0c80f6164e5")
+		(property "Reference" "U613"
+			(at 154.178 79.502 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS05"
+			(at 154.686 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 151.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+			(at 151.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inverter Open Collect"
+			(at 151.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+			(at 151.13 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31d5702a-6f01-4e40-b960-35d24241ec79")
+		)
+		(pin "14"
+			(uuid "8d1118b4-d957-4a20-9fca-f1dfb4980f0a")
+		)
+		(pin "12"
+			(uuid "2b28adad-fa48-407d-9237-28928eb11eaa")
+		)
+		(pin "13"
+			(uuid "db40c9bb-a1e3-4cec-b5f8-bfd5478251d1")
+		)
+		(pin "10"
+			(uuid "d8a329b7-e520-46ea-b9e3-11b129ff9808")
+		)
+		(pin "11"
+			(uuid "3005504c-51b1-4af4-a64d-8b3bba2c2ba6")
+		)
+		(pin "8"
+			(uuid "ef72336a-ad24-4203-9e06-3224e6ae32be")
+		)
+		(pin "9"
+			(uuid "c271691b-38af-46a5-998a-0adb38e098e6")
+		)
+		(pin "6"
+			(uuid "6d1aa53e-52fb-43bb-867f-759e9894e71a")
+		)
+		(pin "5"
+			(uuid "4b42808b-237f-4386-911a-7bfa8fdde6eb")
+		)
+		(pin "4"
+			(uuid "44ced146-a2c1-4320-a020-8b3f878a2e2b")
+		)
+		(pin "3"
+			(uuid "b076e6dc-6b43-4d42-9505-c93dc23caf88")
+		)
+		(pin "2"
+			(uuid "08665f5f-2d48-4359-aa25-ff277a2079ee")
+		)
+		(pin "1"
+			(uuid "57f546af-2959-4eb8-8838-ee36e3437762")
+		)
+		(instances
+			(project ""
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/8caf264c-65dd-4650-9fe1-d43351ee9f9b"
+					(reference "U613")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS05")
+		(at 130.81 115.57 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "308b5f1b-42be-4df6-b18d-15503fd01227")
+		(property "Reference" "U613"
+			(at 133.35 112.776 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS05"
+			(at 134.112 118.618 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inverter Open Collect"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31d5702a-6f01-4e40-b960-35d24241ec79")
+		)
+		(pin "14"
+			(uuid "8d1118b4-d957-4a20-9fca-f1dfb4980f0a")
+		)
+		(pin "12"
+			(uuid "2b28adad-fa48-407d-9237-28928eb11eaa")
+		)
+		(pin "13"
+			(uuid "db40c9bb-a1e3-4cec-b5f8-bfd5478251d1")
+		)
+		(pin "10"
+			(uuid "d8a329b7-e520-46ea-b9e3-11b129ff9808")
+		)
+		(pin "11"
+			(uuid "3005504c-51b1-4af4-a64d-8b3bba2c2ba6")
+		)
+		(pin "8"
+			(uuid "ef72336a-ad24-4203-9e06-3224e6ae32be")
+		)
+		(pin "9"
+			(uuid "c271691b-38af-46a5-998a-0adb38e098e6")
+		)
+		(pin "6"
+			(uuid "6d1aa53e-52fb-43bb-867f-759e9894e71a")
+		)
+		(pin "5"
+			(uuid "4b42808b-237f-4386-911a-7bfa8fdde6eb")
+		)
+		(pin "4"
+			(uuid "44ced146-a2c1-4320-a020-8b3f878a2e2b")
+		)
+		(pin "3"
+			(uuid "b076e6dc-6b43-4d42-9505-c93dc23caf88")
+		)
+		(pin "2"
+			(uuid "08665f5f-2d48-4359-aa25-ff277a2079ee")
+		)
+		(pin "1"
+			(uuid "57f546af-2959-4eb8-8838-ee36e3437762")
+		)
+		(instances
+			(project ""
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/8caf264c-65dd-4650-9fe1-d43351ee9f9b"
+					(reference "U613")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS05")
+		(at 132.08 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37e90604-8ea2-4617-a44b-498fe5e61fa2")
+		(property "Reference" "U613"
+			(at 134.874 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS05"
+			(at 135.128 85.852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 132.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+			(at 132.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inverter Open Collect"
+			(at 132.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+			(at 132.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31d5702a-6f01-4e40-b960-35d24241ec79")
+		)
+		(pin "14"
+			(uuid "8d1118b4-d957-4a20-9fca-f1dfb4980f0a")
+		)
+		(pin "12"
+			(uuid "2b28adad-fa48-407d-9237-28928eb11eaa")
+		)
+		(pin "13"
+			(uuid "db40c9bb-a1e3-4cec-b5f8-bfd5478251d1")
+		)
+		(pin "10"
+			(uuid "d8a329b7-e520-46ea-b9e3-11b129ff9808")
+		)
+		(pin "11"
+			(uuid "3005504c-51b1-4af4-a64d-8b3bba2c2ba6")
+		)
+		(pin "8"
+			(uuid "ef72336a-ad24-4203-9e06-3224e6ae32be")
+		)
+		(pin "9"
+			(uuid "c271691b-38af-46a5-998a-0adb38e098e6")
+		)
+		(pin "6"
+			(uuid "6d1aa53e-52fb-43bb-867f-759e9894e71a")
+		)
+		(pin "5"
+			(uuid "4b42808b-237f-4386-911a-7bfa8fdde6eb")
+		)
+		(pin "4"
+			(uuid "44ced146-a2c1-4320-a020-8b3f878a2e2b")
+		)
+		(pin "3"
+			(uuid "b076e6dc-6b43-4d42-9505-c93dc23caf88")
+		)
+		(pin "2"
+			(uuid "08665f5f-2d48-4359-aa25-ff277a2079ee")
+		)
+		(pin "1"
+			(uuid "57f546af-2959-4eb8-8838-ee36e3437762")
+		)
+		(instances
+			(project ""
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/8caf264c-65dd-4650-9fe1-d43351ee9f9b"
+					(reference "U613")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS05")
+		(at 132.08 99.06 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "632d99e9-8f72-4924-b581-f3089dc08ff5")
+		(property "Reference" "U613"
+			(at 135.382 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS05"
+			(at 135.636 102.108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inverter Open Collect"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31d5702a-6f01-4e40-b960-35d24241ec79")
+		)
+		(pin "14"
+			(uuid "8d1118b4-d957-4a20-9fca-f1dfb4980f0a")
+		)
+		(pin "12"
+			(uuid "2b28adad-fa48-407d-9237-28928eb11eaa")
+		)
+		(pin "13"
+			(uuid "db40c9bb-a1e3-4cec-b5f8-bfd5478251d1")
+		)
+		(pin "10"
+			(uuid "d8a329b7-e520-46ea-b9e3-11b129ff9808")
+		)
+		(pin "11"
+			(uuid "3005504c-51b1-4af4-a64d-8b3bba2c2ba6")
+		)
+		(pin "8"
+			(uuid "ef72336a-ad24-4203-9e06-3224e6ae32be")
+		)
+		(pin "9"
+			(uuid "c271691b-38af-46a5-998a-0adb38e098e6")
+		)
+		(pin "6"
+			(uuid "6d1aa53e-52fb-43bb-867f-759e9894e71a")
+		)
+		(pin "5"
+			(uuid "4b42808b-237f-4386-911a-7bfa8fdde6eb")
+		)
+		(pin "4"
+			(uuid "44ced146-a2c1-4320-a020-8b3f878a2e2b")
+		)
+		(pin "3"
+			(uuid "b076e6dc-6b43-4d42-9505-c93dc23caf88")
+		)
+		(pin "2"
+			(uuid "08665f5f-2d48-4359-aa25-ff277a2079ee")
+		)
+		(pin "1"
+			(uuid "57f546af-2959-4eb8-8838-ee36e3437762")
+		)
+		(instances
+			(project ""
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/8caf264c-65dd-4650-9fe1-d43351ee9f9b"
+					(reference "U613")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS05")
+		(at 152.4 97.79 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "730a64a9-69a9-4516-86ff-da329585af50")
+		(property "Reference" "U613"
+			(at 154.94 94.742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LS05"
+			(at 155.448 101.092 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS05"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inverter Open Collect"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS05N/277277"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "31d5702a-6f01-4e40-b960-35d24241ec79")
+		)
+		(pin "14"
+			(uuid "8d1118b4-d957-4a20-9fca-f1dfb4980f0a")
+		)
+		(pin "12"
+			(uuid "2b28adad-fa48-407d-9237-28928eb11eaa")
+		)
+		(pin "13"
+			(uuid "db40c9bb-a1e3-4cec-b5f8-bfd5478251d1")
+		)
+		(pin "10"
+			(uuid "d8a329b7-e520-46ea-b9e3-11b129ff9808")
+		)
+		(pin "11"
+			(uuid "3005504c-51b1-4af4-a64d-8b3bba2c2ba6")
+		)
+		(pin "8"
+			(uuid "ef72336a-ad24-4203-9e06-3224e6ae32be")
+		)
+		(pin "9"
+			(uuid "c271691b-38af-46a5-998a-0adb38e098e6")
+		)
+		(pin "6"
+			(uuid "6d1aa53e-52fb-43bb-867f-759e9894e71a")
+		)
+		(pin "5"
+			(uuid "4b42808b-237f-4386-911a-7bfa8fdde6eb")
+		)
+		(pin "4"
+			(uuid "44ced146-a2c1-4320-a020-8b3f878a2e2b")
+		)
+		(pin "3"
+			(uuid "b076e6dc-6b43-4d42-9505-c93dc23caf88")
+		)
+		(pin "2"
+			(uuid "08665f5f-2d48-4359-aa25-ff277a2079ee")
+		)
+		(pin "1"
+			(uuid "57f546af-2959-4eb8-8838-ee36e3437762")
+		)
+		(instances
+			(project ""
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/8caf264c-65dd-4650-9fe1-d43351ee9f9b"
+					(reference "U613")
+					(unit 4)
+				)
+			)
+		)
+	)
+)

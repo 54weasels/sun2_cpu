@@ -66163,6 +66163,16 @@
 		)
 		(uuid "162fa5ed-e380-4753-bed9-3f42d1bb03fd")
 	)
+	(label "IA19"
+		(at 207.01 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b8bcc97-1af1-4db7-8744-a5fa152b9629")
+	)
 	(label "P.D5"
 		(at 273.05 110.49 0)
 		(effects
@@ -66893,6 +66903,16 @@
 		)
 		(uuid "715bd179-18ea-4fa2-a908-d770708ab1f9")
 	)
+	(label "IA21"
+		(at 207.01 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "71679e1e-fbb4-452f-a0ac-c0b58cd9eeeb")
+	)
 	(label "P.D6"
 		(at 321.31 113.03 0)
 		(effects
@@ -66952,6 +66972,16 @@
 			(justify right bottom)
 		)
 		(uuid "74bb1604-cf49-4061-ab9f-20100e9d6ba3")
+	)
+	(label "IA20"
+		(at 207.01 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7531a9e2-e2c9-402c-8d5b-ace7172557cc")
 	)
 	(label "P.D12"
 		(at 321.31 149.86 0)
@@ -67102,6 +67132,16 @@
 			(justify right bottom)
 		)
 		(uuid "7dc8e793-2af5-4312-b545-615b08a21915")
+	)
+	(label "IA22"
+		(at 207.01 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7fca980e-7e0d-4b8e-ad39-657d490696bb")
 	)
 	(label "P.A1"
 		(at 19.05 170.18 0)
@@ -67273,6 +67313,16 @@
 		)
 		(uuid "91188043-ebec-4fb1-8bc1-0713824b8b48")
 	)
+	(label "IA23"
+		(at 207.01 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "92120a32-e2e6-4fdc-8113-7e1dd2aa299e")
+	)
 	(label "CXS3"
 		(at 102.87 91.44 0)
 		(effects
@@ -67332,6 +67382,16 @@
 			(justify left bottom)
 		)
 		(uuid "9867ab76-1750-4866-a02f-e0e55b601c90")
+	)
+	(label "IA18"
+		(at 207.01 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9893c810-0f2e-49f5-9fbb-c896707f466c")
 	)
 	(label "P.D0"
 		(at 67.31 24.13 0)
@@ -68335,6 +68395,16 @@
 		)
 		(uuid "e76408bc-38d6-4f4f-8a01-d61420e15594")
 	)
+	(label "IA17"
+		(at 207.01 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e7a86845-ee69-4446-a3ee-e86f81bb2344")
+	)
 	(label "PROT4"
 		(at 256.54 152.4 180)
 		(effects
@@ -68344,6 +68414,16 @@
 			(justify right bottom)
 		)
 		(uuid "e7d572f6-a09b-4f64-a5c8-a389b9a18825")
+	)
+	(label "IA16"
+		(at 207.01 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e83f075d-85d0-49af-9904-def87f82eac2")
 	)
 	(label "GND"
 		(at 304.8 119.38 270)

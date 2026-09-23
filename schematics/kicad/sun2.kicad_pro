@@ -432,6 +432,10 @@
     [
       "9fd69a33-178f-4139-aa63-3515055c4d55",
       "RASTEROP_PARITY_P2"
+    ],
+    [
+      "8caf264c-65dd-4650-9fe1-d43351ee9f9b",
+      "PERIPHERALS"
     ]
   ],
   "text_variables": {}

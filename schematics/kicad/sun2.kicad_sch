@@ -48,6 +48,48 @@
 		)
 	)
 	(sheet
+		(at 100.33 123.19)
+		(size 35.56 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8caf264c-65dd-4650-9fe1-d43351ee9f9b")
+		(property "Sheetname" "PERIPHERALS"
+			(at 100.33 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sun2_periph.kicad_sch"
+			(at 100.33 187.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sun2"
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 100.33 35.56)
 		(size 35.56 59.69)
 		(exclude_from_sim no)
