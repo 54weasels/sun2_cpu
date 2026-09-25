@@ -7237,7 +7237,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7257,6 +7257,15 @@
 			)
 			(property "Description" "Hex Inverter"
 				(at 0.254 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -12707,16 +12716,6 @@
 		)
 		(uuid "d12141a6-c78f-4847-96e7-066f4bc2ad25")
 	)
-	(label "P.RESET\\"
-		(at 121.92 189.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4279b57-2c56-48ec-8de9-d4afc6b08900")
-	)
 	(label "INT6\\"
 		(at 66.04 176.53 0)
 		(effects
@@ -13275,6 +13274,17 @@
 			(justify right)
 		)
 		(uuid "9337a763-b9e0-4b3d-9673-04372ef1ec8f")
+	)
+	(hierarchical_label "P.RESET\\"
+		(shape output)
+		(at 129.54 189.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "95d67c9d-18eb-4358-bb88-482fe11c673f")
 	)
 	(hierarchical_label "FPPERR\\"
 		(shape input)
@@ -14299,7 +14309,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 172.72 165.1 0)
 			(effects
 				(font
@@ -14319,6 +14329,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 172.974 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 172.72 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14403,7 +14422,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at -29.21 132.08 0)
 			(effects
 				(font
@@ -14423,6 +14442,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at -28.956 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at -29.21 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14507,7 +14535,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at -29.21 123.19 0)
 			(effects
 				(font
@@ -14527,6 +14555,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at -28.956 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at -29.21 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15523,7 +15560,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at -29.21 113.03 0)
 			(effects
 				(font
@@ -15543,6 +15580,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at -28.956 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at -29.21 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16789,7 +16835,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 59.69 226.06 0)
 			(effects
 				(font
@@ -16809,6 +16855,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 59.944 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 59.69 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16895,7 +16950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 186.69 233.68 0)
 			(effects
 				(font
@@ -16915,6 +16970,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 186.944 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 186.69 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17065,7 +17129,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 48.26 85.09 0)
 			(effects
 				(font
@@ -17085,6 +17149,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 48.514 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17284,7 +17357,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 45.72 226.06 0)
 			(effects
 				(font
@@ -17304,6 +17377,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 45.974 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 45.72 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18136,121 +18218,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74F74")
-		(at -33.02 180.34 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "860eefed-0c4b-4938-8e52-9f78d5eedf9a")
-		(property "Reference" "U206"
-			(at -30.8767 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74F74"
-			(at -30.8767 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -33.02 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f74.pdf"
-			(at -33.02 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual D Flip-flop, Set & Reset"
-			(at -33.02 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F74N/277204"
-			(at -33.02 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "095638e1-a145-415b-b392-79548eb0983d")
-		)
-		(pin "14"
-			(uuid "b3251c25-5914-4995-8472-71846bf7ed71")
-		)
-		(pin "13"
-			(uuid "d1b5676d-9a08-40db-8926-1e1e80e4afbf")
-		)
-		(pin "10"
-			(uuid "4ba902a4-b82d-464d-b4b0-15a059a2252f")
-		)
-		(pin "9"
-			(uuid "6a6f7212-121d-4ed3-91f1-a326ed06f082")
-		)
-		(pin "8"
-			(uuid "24fef5dc-2b58-46b5-adef-348b752865c8")
-		)
-		(pin "5"
-			(uuid "9b57cb6d-2077-4854-a6b9-27ec231f72b5")
-		)
-		(pin "1"
-			(uuid "20f06415-411a-4848-8423-50f5dd8f9436")
-		)
-		(pin "4"
-			(uuid "1360eb07-2147-48b5-af8b-dbe51699d721")
-		)
-		(pin "3"
-			(uuid "095b4c10-fd52-4838-9f58-842c092fdf66")
-		)
-		(pin "2"
-			(uuid "b99427b8-8849-4964-a399-145ab969df6f")
-		)
-		(pin "12"
-			(uuid "7a2b0866-89c6-46c7-8849-11d0f1c4ba20")
-		)
-		(pin "6"
-			(uuid "c8e35750-73be-4755-bbc7-28d0b16ecd41")
-		)
-		(pin "11"
-			(uuid "7e6d68bb-4db8-47e3-b021-c0b424c80bcd")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U206")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "sun2:74LS04")
 		(at -29.21 149.86 0)
 		(unit 5)
@@ -18276,7 +18243,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at -29.21 149.86 0)
 			(effects
 				(font
@@ -18296,6 +18263,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at -28.956 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at -29.21 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19180,7 +19156,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 92.71 173.99 0)
 			(effects
 				(font
@@ -19200,6 +19176,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 92.964 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 92.71 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19286,7 +19271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 196.85 233.68 0)
 			(effects
 				(font
@@ -19306,6 +19291,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 197.104 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 196.85 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19822,7 +19816,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at -29.21 140.97 0)
 			(effects
 				(font
@@ -19842,6 +19836,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at -28.956 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at -29.21 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20012,7 +20015,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 73.66 226.06 0)
 			(effects
 				(font
@@ -20032,6 +20035,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 73.914 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 73.66 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20644,7 +20656,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 102.87 226.06 0)
 			(effects
 				(font
@@ -20664,6 +20676,15 @@
 		)
 		(property "Description" "Hex Inverter"
 			(at 103.124 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
+			(at 102.87 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
