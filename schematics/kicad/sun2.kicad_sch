@@ -48,6 +48,48 @@
 		)
 	)
 	(sheet
+		(at 152.4 123.19)
+		(size 31.75 59.69)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7153c171-e6a5-40f1-bd07-288a1f1a2f2f")
+		(property "Sheetname" "ADDRS_BUFFERS"
+			(at 152.4 122.4784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sun2_addrs_buffers.kicad_sch"
+			(at 152.4 183.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sun2"
+				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 100.33 123.19)
 		(size 35.56 63.5)
 		(exclude_from_sim no)

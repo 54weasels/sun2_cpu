@@ -436,6 +436,10 @@
     [
       "8caf264c-65dd-4650-9fe1-d43351ee9f9b",
       "PERIPHERALS"
+    ],
+    [
+      "7153c171-e6a5-40f1-bd07-288a1f1a2f2f",
+      "ADDRS_BUFFERS"
     ]
   ],
   "text_variables": {}
