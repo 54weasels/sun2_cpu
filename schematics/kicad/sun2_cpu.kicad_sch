@@ -14285,232 +14285,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74LS04")
-		(at -29.21 132.08 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a343d85-e23b-4bbc-be5b-a162968ecab8")
-		(property "Reference" "U610"
-			(at -30.48 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at -30.48 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at -29.21 136.144 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at -28.956 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at -29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "5f2c483b-3a04-4a79-b84f-9da01a4db1de")
-		)
-		(pin "2"
-			(uuid "36c416eb-4cd1-4730-b776-c32d10b42dc5")
-		)
-		(pin "1"
-			(uuid "076d36b0-dbe9-4af7-9d71-d3f9163cdc64")
-		)
-		(pin "11"
-			(uuid "66fad20f-9611-4f85-a4d9-d9a647ab661a")
-		)
-		(pin "10"
-			(uuid "48ee9911-198f-47c8-9638-bf7ed8fa27ee")
-		)
-		(pin "13"
-			(uuid "c44b411d-bfec-4f7b-bd39-f892abcf8246")
-		)
-		(pin "12"
-			(uuid "9f2fb4fa-29cb-4924-aa41-0660f8c75b01")
-		)
-		(pin "14"
-			(uuid "df882707-2f01-4fb9-94f0-7609de01444b")
-		)
-		(pin "6"
-			(uuid "3c71b8d2-d1eb-4a4c-9679-6afa0eb75e0a")
-		)
-		(pin "8"
-			(uuid "337e8feb-5544-430e-990c-ffa3d7335b75")
-		)
-		(pin "9"
-			(uuid "787bd4ee-b619-4426-9085-3c74baecf676")
-		)
-		(pin "5"
-			(uuid "4d5ad8f2-749b-474d-998f-c826df4c25d2")
-		)
-		(pin "4"
-			(uuid "d8f12fd4-15b1-49a6-bf9f-3443d4897602")
-		)
-		(pin "7"
-			(uuid "c37afebd-9fc0-4110-9f1c-d5e1eae9d66a")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U610")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at -29.21 123.19 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1405478d-88b0-4eff-9d02-eeec491c1c22")
-		(property "Reference" "U610"
-			(at -30.48 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at -30.48 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -29.21 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at -29.21 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at -28.956 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at -29.21 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "5f2c483b-3a04-4a79-b84f-9da01a4db1df")
-		)
-		(pin "2"
-			(uuid "36c416eb-4cd1-4730-b776-c32d10b42dc6")
-		)
-		(pin "1"
-			(uuid "076d36b0-dbe9-4af7-9d71-d3f9163cdc65")
-		)
-		(pin "11"
-			(uuid "66fad20f-9611-4f85-a4d9-d9a647ab661b")
-		)
-		(pin "10"
-			(uuid "48ee9911-198f-47c8-9638-bf7ed8fa27ef")
-		)
-		(pin "13"
-			(uuid "c44b411d-bfec-4f7b-bd39-f892abcf8247")
-		)
-		(pin "12"
-			(uuid "9f2fb4fa-29cb-4924-aa41-0660f8c75b02")
-		)
-		(pin "14"
-			(uuid "df882707-2f01-4fb9-94f0-7609de01444c")
-		)
-		(pin "6"
-			(uuid "3c71b8d2-d1eb-4a4c-9679-6afa0eb75e0b")
-		)
-		(pin "8"
-			(uuid "337e8feb-5544-430e-990c-ffa3d7335b76")
-		)
-		(pin "9"
-			(uuid "787bd4ee-b619-4426-9085-3c74baecf677")
-		)
-		(pin "5"
-			(uuid "4d5ad8f2-749b-474d-998f-c826df4c25d3")
-		)
-		(pin "4"
-			(uuid "d8f12fd4-15b1-49a6-bf9f-3443d4897603")
-		)
-		(pin "7"
-			(uuid "c37afebd-9fc0-4110-9f1c-d5e1eae9d66b")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U610")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "sun2:74F04")
 		(at 233.68 222.25 0)
 		(unit 7)
@@ -14740,7 +14514,7 @@
 	)
 	(symbol
 		(lib_id "sun2:7406")
-		(at -31.75 83.82 0)
+		(at -7.62 93.98 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14749,7 +14523,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f169c4e-fb93-40df-a206-6158734aa2f6")
 		(property "Reference" "U122"
-			(at -30.48 81.28 0)
+			(at -6.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14757,7 +14531,7 @@
 			)
 		)
 		(property "Value" "7406"
-			(at -30.48 83.82 0)
+			(at -6.35 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14765,7 +14539,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -31.75 83.82 0)
+			(at -7.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14774,7 +14548,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn7406.pdf"
-			(at -31.75 83.82 0)
+			(at -7.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14783,7 +14557,7 @@
 			)
 		)
 		(property "Description" "HEX Inverter Buffer"
-			(at -31.75 83.82 0)
+			(at -7.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14792,7 +14566,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN7406N/277081"
-			(at -31.75 83.82 0)
+			(at -7.62 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14966,7 +14740,7 @@
 	)
 	(symbol
 		(lib_id "sun2:7407")
-		(at -15.24 222.25 0)
+		(at -6.35 107.95 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14975,7 +14749,7 @@
 		(fields_autoplaced yes)
 		(uuid "27916aff-f464-4077-a243-996e36625305")
 		(property "Reference" "U110"
-			(at -13.97 219.71 0)
+			(at -5.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14983,7 +14757,7 @@
 			)
 		)
 		(property "Value" "7407"
-			(at -13.97 222.25 0)
+			(at -5.08 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14991,7 +14765,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -15.24 222.25 0)
+			(at -6.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15000,7 +14774,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn7407.pdf"
-			(at -15.24 222.25 0)
+			(at -6.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15009,7 +14783,7 @@
 			)
 		)
 		(property "Description" "HEX Buffer"
-			(at -15.24 222.25 0)
+			(at -6.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15018,7 +14792,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN7407N/277082"
-			(at -15.24 222.25 0)
+			(at -6.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15309,7 +15083,7 @@
 	)
 	(symbol
 		(lib_id "sun2:74F74")
-		(at -30.48 196.85 0)
+		(at 186.69 234.95 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15318,7 +15092,7 @@
 		(fields_autoplaced yes)
 		(uuid "35929bbf-1d32-4084-adec-d26eaae6cc3f")
 		(property "Reference" "U206"
-			(at -29.21 196.2149 0)
+			(at 187.96 234.3149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15327,7 +15101,7 @@
 			)
 		)
 		(property "Value" "74F74"
-			(at -29.21 198.7549 0)
+			(at 187.96 236.8549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15336,7 +15110,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -30.48 196.85 0)
+			(at 186.69 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15345,7 +15119,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f74.pdf"
-			(at -30.48 196.85 0)
+			(at 186.69 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15354,7 +15128,7 @@
 			)
 		)
 		(property "Description" "Dual D Flip-flop, Set & Reset"
-			(at -30.48 196.85 0)
+			(at 186.69 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15363,7 +15137,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F74N/277204"
-			(at -30.48 196.85 0)
+			(at 186.69 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15418,119 +15192,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U206")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at -29.21 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3692f4a6-4e85-445a-91f6-443222ad2715")
-		(property "Reference" "U610"
-			(at -30.48 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at -30.48 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -29.21 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at -29.21 117.094 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at -28.956 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at -29.21 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "5f2c483b-3a04-4a79-b84f-9da01a4db1e0")
-		)
-		(pin "2"
-			(uuid "36c416eb-4cd1-4730-b776-c32d10b42dc7")
-		)
-		(pin "1"
-			(uuid "076d36b0-dbe9-4af7-9d71-d3f9163cdc66")
-		)
-		(pin "11"
-			(uuid "66fad20f-9611-4f85-a4d9-d9a647ab661c")
-		)
-		(pin "10"
-			(uuid "48ee9911-198f-47c8-9638-bf7ed8fa27f0")
-		)
-		(pin "13"
-			(uuid "c44b411d-bfec-4f7b-bd39-f892abcf8248")
-		)
-		(pin "12"
-			(uuid "9f2fb4fa-29cb-4924-aa41-0660f8c75b03")
-		)
-		(pin "14"
-			(uuid "df882707-2f01-4fb9-94f0-7609de01444d")
-		)
-		(pin "6"
-			(uuid "3c71b8d2-d1eb-4a4c-9679-6afa0eb75e0c")
-		)
-		(pin "8"
-			(uuid "337e8feb-5544-430e-990c-ffa3d7335b77")
-		)
-		(pin "9"
-			(uuid "787bd4ee-b619-4426-9085-3c74baecf678")
-		)
-		(pin "5"
-			(uuid "4d5ad8f2-749b-474d-998f-c826df4c25d4")
-		)
-		(pin "4"
-			(uuid "d8f12fd4-15b1-49a6-bf9f-3443d4897604")
-		)
-		(pin "7"
-			(uuid "c37afebd-9fc0-4110-9f1c-d5e1eae9d66c")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U610")
-					(unit 1)
 				)
 			)
 		)
@@ -16698,234 +16359,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74LS04")
-		(at 59.69 226.06 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "648384df-3e4c-4c7b-a0dc-6caea9516892")
-		(property "Reference" "U608"
-			(at 58.42 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at 58.42 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 59.69 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 59.69 230.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 59.944 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at 59.69 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14cff9ee-86c4-4048-9c46-c3608b2eb243")
-		)
-		(pin "3"
-			(uuid "8efc489a-d592-4e72-95a1-ec9310683f26")
-		)
-		(pin "2"
-			(uuid "53b3fdd2-9c6b-45e9-bb9b-9af803cc49dd")
-		)
-		(pin "4"
-			(uuid "71760c49-d478-4eae-884c-8e50d1f2652f")
-		)
-		(pin "5"
-			(uuid "49d3e46f-c329-4756-94d3-b7715a9e2fbb")
-		)
-		(pin "6"
-			(uuid "1d2ef7b3-9b7c-4d7b-99ed-a017e44f5acd")
-		)
-		(pin "9"
-			(uuid "3fe243e8-0d86-4389-8fbe-cd4ab57fda61")
-		)
-		(pin "8"
-			(uuid "088926b2-291e-4776-a8f1-eed05cbf7321")
-		)
-		(pin "11"
-			(uuid "da294b9a-9384-4d29-80a4-ce4ebf901b43")
-		)
-		(pin "10"
-			(uuid "9f266289-add4-409d-9fdd-6e411ce75493")
-		)
-		(pin "13"
-			(uuid "586f280c-e649-42fa-8ae4-960d5599d130")
-		)
-		(pin "12"
-			(uuid "c6383d10-22a5-46cf-a9ba-b200ee8718ef")
-		)
-		(pin "14"
-			(uuid "caad9ed8-7f55-4e09-86c7-c4f999208226")
-		)
-		(pin "7"
-			(uuid "2cd7c5e9-9a32-467e-8390-2e51e21f4363")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U608")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at 186.69 233.68 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6660b068-5d72-4496-bd26-599984c40d9b")
-		(property "Reference" "U608"
-			(at 187.96 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS04"
-			(at 187.96 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 186.69 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 186.69 237.744 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 186.944 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at 186.69 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14cff9ee-86c4-4048-9c46-c3608b2eb244")
-		)
-		(pin "3"
-			(uuid "8efc489a-d592-4e72-95a1-ec9310683f27")
-		)
-		(pin "2"
-			(uuid "53b3fdd2-9c6b-45e9-bb9b-9af803cc49de")
-		)
-		(pin "4"
-			(uuid "71760c49-d478-4eae-884c-8e50d1f26530")
-		)
-		(pin "5"
-			(uuid "49d3e46f-c329-4756-94d3-b7715a9e2fbc")
-		)
-		(pin "6"
-			(uuid "1d2ef7b3-9b7c-4d7b-99ed-a017e44f5ace")
-		)
-		(pin "9"
-			(uuid "3fe243e8-0d86-4389-8fbe-cd4ab57fda62")
-		)
-		(pin "8"
-			(uuid "088926b2-291e-4776-a8f1-eed05cbf7322")
-		)
-		(pin "11"
-			(uuid "da294b9a-9384-4d29-80a4-ce4ebf901b44")
-		)
-		(pin "10"
-			(uuid "9f266289-add4-409d-9fdd-6e411ce75494")
-		)
-		(pin "13"
-			(uuid "586f280c-e649-42fa-8ae4-960d5599d131")
-		)
-		(pin "12"
-			(uuid "c6383d10-22a5-46cf-a9ba-b200ee8718f0")
-		)
-		(pin "14"
-			(uuid "caad9ed8-7f55-4e09-86c7-c4f999208227")
-		)
-		(pin "7"
-			(uuid "2cd7c5e9-9a32-467e-8390-2e51e21f4364")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U608")
-					(unit 7)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 148.59 199.39 0)
 		(unit 1)
@@ -17214,119 +16647,6 @@
 			(project ""
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U206")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at 45.72 226.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f868491-3421-4fb6-88bf-87404934cc12")
-		(property "Reference" "U608"
-			(at 44.45 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at 44.45 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 45.72 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 45.72 230.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 45.974 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at 45.72 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14cff9ee-86c4-4048-9c46-c3608b2eb245")
-		)
-		(pin "3"
-			(uuid "8efc489a-d592-4e72-95a1-ec9310683f28")
-		)
-		(pin "2"
-			(uuid "53b3fdd2-9c6b-45e9-bb9b-9af803cc49df")
-		)
-		(pin "4"
-			(uuid "71760c49-d478-4eae-884c-8e50d1f26531")
-		)
-		(pin "5"
-			(uuid "49d3e46f-c329-4756-94d3-b7715a9e2fbd")
-		)
-		(pin "6"
-			(uuid "1d2ef7b3-9b7c-4d7b-99ed-a017e44f5acf")
-		)
-		(pin "9"
-			(uuid "3fe243e8-0d86-4389-8fbe-cd4ab57fda63")
-		)
-		(pin "8"
-			(uuid "088926b2-291e-4776-a8f1-eed05cbf7323")
-		)
-		(pin "11"
-			(uuid "da294b9a-9384-4d29-80a4-ce4ebf901b45")
-		)
-		(pin "10"
-			(uuid "9f266289-add4-409d-9fdd-6e411ce75495")
-		)
-		(pin "13"
-			(uuid "586f280c-e649-42fa-8ae4-960d5599d132")
-		)
-		(pin "12"
-			(uuid "c6383d10-22a5-46cf-a9ba-b200ee8718f1")
-		)
-		(pin "14"
-			(uuid "caad9ed8-7f55-4e09-86c7-c4f999208228")
-		)
-		(pin "7"
-			(uuid "2cd7c5e9-9a32-467e-8390-2e51e21f4365")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U608")
 					(unit 1)
 				)
 			)
@@ -18101,119 +17421,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U122")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at -29.21 149.86 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d38d1c1-2496-421b-90e5-bca8f8d6f4ec")
-		(property "Reference" "U610"
-			(at -30.48 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at -30.48 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -29.21 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at -29.21 153.924 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at -28.956 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at -29.21 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "5f2c483b-3a04-4a79-b84f-9da01a4db1e2")
-		)
-		(pin "2"
-			(uuid "36c416eb-4cd1-4730-b776-c32d10b42dc9")
-		)
-		(pin "1"
-			(uuid "076d36b0-dbe9-4af7-9d71-d3f9163cdc68")
-		)
-		(pin "11"
-			(uuid "66fad20f-9611-4f85-a4d9-d9a647ab661e")
-		)
-		(pin "10"
-			(uuid "48ee9911-198f-47c8-9638-bf7ed8fa27f2")
-		)
-		(pin "13"
-			(uuid "c44b411d-bfec-4f7b-bd39-f892abcf824a")
-		)
-		(pin "12"
-			(uuid "9f2fb4fa-29cb-4924-aa41-0660f8c75b05")
-		)
-		(pin "14"
-			(uuid "df882707-2f01-4fb9-94f0-7609de01444f")
-		)
-		(pin "6"
-			(uuid "3c71b8d2-d1eb-4a4c-9679-6afa0eb75e0e")
-		)
-		(pin "8"
-			(uuid "337e8feb-5544-430e-990c-ffa3d7335b79")
-		)
-		(pin "9"
-			(uuid "787bd4ee-b619-4426-9085-3c74baecf67a")
-		)
-		(pin "5"
-			(uuid "4d5ad8f2-749b-474d-998f-c826df4c25d6")
-		)
-		(pin "4"
-			(uuid "d8f12fd4-15b1-49a6-bf9f-3443d4897606")
-		)
-		(pin "7"
-			(uuid "c37afebd-9fc0-4110-9f1c-d5e1eae9d66e")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U610")
-					(unit 5)
 				)
 			)
 		)
@@ -19132,121 +18339,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74LS04")
-		(at 196.85 233.68 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c28c8e94-a122-4402-991c-217b6d16edb1")
-		(property "Reference" "U610"
-			(at 198.12 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS04"
-			(at 198.12 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 196.85 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 196.85 237.744 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 197.104 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at 196.85 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "5f2c483b-3a04-4a79-b84f-9da01a4db1e3")
-		)
-		(pin "2"
-			(uuid "36c416eb-4cd1-4730-b776-c32d10b42dca")
-		)
-		(pin "1"
-			(uuid "076d36b0-dbe9-4af7-9d71-d3f9163cdc69")
-		)
-		(pin "11"
-			(uuid "66fad20f-9611-4f85-a4d9-d9a647ab661f")
-		)
-		(pin "10"
-			(uuid "48ee9911-198f-47c8-9638-bf7ed8fa27f3")
-		)
-		(pin "13"
-			(uuid "c44b411d-bfec-4f7b-bd39-f892abcf824b")
-		)
-		(pin "12"
-			(uuid "9f2fb4fa-29cb-4924-aa41-0660f8c75b06")
-		)
-		(pin "14"
-			(uuid "df882707-2f01-4fb9-94f0-7609de014450")
-		)
-		(pin "6"
-			(uuid "3c71b8d2-d1eb-4a4c-9679-6afa0eb75e0f")
-		)
-		(pin "8"
-			(uuid "337e8feb-5544-430e-990c-ffa3d7335b7a")
-		)
-		(pin "9"
-			(uuid "787bd4ee-b619-4426-9085-3c74baecf67b")
-		)
-		(pin "5"
-			(uuid "4d5ad8f2-749b-474d-998f-c826df4c25d7")
-		)
-		(pin "4"
-			(uuid "d8f12fd4-15b1-49a6-bf9f-3443d4897607")
-		)
-		(pin "7"
-			(uuid "c37afebd-9fc0-4110-9f1c-d5e1eae9d66f")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U610")
-					(unit 7)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "sun2:74F08")
 		(at 195.58 125.73 0)
 		(unit 2)
@@ -19679,119 +18771,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74LS04")
-		(at -29.21 140.97 0)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6f820be-a6b1-4c9b-86af-e1574106924b")
-		(property "Reference" "U610"
-			(at -30.48 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at -30.48 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -29.21 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at -29.21 145.034 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at -28.956 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at -29.21 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "5f2c483b-3a04-4a79-b84f-9da01a4db1e4")
-		)
-		(pin "2"
-			(uuid "36c416eb-4cd1-4730-b776-c32d10b42dcb")
-		)
-		(pin "1"
-			(uuid "076d36b0-dbe9-4af7-9d71-d3f9163cdc6a")
-		)
-		(pin "11"
-			(uuid "66fad20f-9611-4f85-a4d9-d9a647ab6620")
-		)
-		(pin "10"
-			(uuid "48ee9911-198f-47c8-9638-bf7ed8fa27f4")
-		)
-		(pin "13"
-			(uuid "c44b411d-bfec-4f7b-bd39-f892abcf824c")
-		)
-		(pin "12"
-			(uuid "9f2fb4fa-29cb-4924-aa41-0660f8c75b07")
-		)
-		(pin "14"
-			(uuid "df882707-2f01-4fb9-94f0-7609de014451")
-		)
-		(pin "6"
-			(uuid "3c71b8d2-d1eb-4a4c-9679-6afa0eb75e10")
-		)
-		(pin "8"
-			(uuid "337e8feb-5544-430e-990c-ffa3d7335b7b")
-		)
-		(pin "9"
-			(uuid "787bd4ee-b619-4426-9085-3c74baecf67c")
-		)
-		(pin "5"
-			(uuid "4d5ad8f2-749b-474d-998f-c826df4c25d8")
-		)
-		(pin "4"
-			(uuid "d8f12fd4-15b1-49a6-bf9f-3443d4897608")
-		)
-		(pin "7"
-			(uuid "c37afebd-9fc0-4110-9f1c-d5e1eae9d670")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U610")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "sun2:8211")
 		(at 64.77 33.02 0)
 		(unit 1)
@@ -19873,119 +18852,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U120")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at 73.66 226.06 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df77bd96-9704-4cef-bd83-a55c289944d2")
-		(property "Reference" "U608"
-			(at 72.39 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at 72.39 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 73.66 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 73.66 230.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 73.914 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at 73.66 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14cff9ee-86c4-4048-9c46-c3608b2eb247")
-		)
-		(pin "3"
-			(uuid "8efc489a-d592-4e72-95a1-ec9310683f2a")
-		)
-		(pin "2"
-			(uuid "53b3fdd2-9c6b-45e9-bb9b-9af803cc49e1")
-		)
-		(pin "4"
-			(uuid "71760c49-d478-4eae-884c-8e50d1f26533")
-		)
-		(pin "5"
-			(uuid "49d3e46f-c329-4756-94d3-b7715a9e2fbf")
-		)
-		(pin "6"
-			(uuid "1d2ef7b3-9b7c-4d7b-99ed-a017e44f5ad1")
-		)
-		(pin "9"
-			(uuid "3fe243e8-0d86-4389-8fbe-cd4ab57fda65")
-		)
-		(pin "8"
-			(uuid "088926b2-291e-4776-a8f1-eed05cbf7325")
-		)
-		(pin "11"
-			(uuid "da294b9a-9384-4d29-80a4-ce4ebf901b47")
-		)
-		(pin "10"
-			(uuid "9f266289-add4-409d-9fdd-6e411ce75497")
-		)
-		(pin "13"
-			(uuid "586f280c-e649-42fa-8ae4-960d5599d134")
-		)
-		(pin "12"
-			(uuid "c6383d10-22a5-46cf-a9ba-b200ee8718f3")
-		)
-		(pin "14"
-			(uuid "caad9ed8-7f55-4e09-86c7-c4f99920822a")
-		)
-		(pin "7"
-			(uuid "2cd7c5e9-9a32-467e-8390-2e51e21f4367")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U608")
-					(unit 3)
 				)
 			)
 		)
@@ -20514,119 +19380,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "#PWR03")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74LS04")
-		(at 102.87 226.06 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f489ece1-f6ac-4e50-8a83-f981fc97f5a1")
-		(property "Reference" "U608"
-			(at 101.6 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS04"
-			(at 101.6 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 102.87 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 102.87 230.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 103.124 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74LS04N/277275"
-			(at 102.87 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14cff9ee-86c4-4048-9c46-c3608b2eb248")
-		)
-		(pin "3"
-			(uuid "8efc489a-d592-4e72-95a1-ec9310683f2b")
-		)
-		(pin "2"
-			(uuid "53b3fdd2-9c6b-45e9-bb9b-9af803cc49e2")
-		)
-		(pin "4"
-			(uuid "71760c49-d478-4eae-884c-8e50d1f26534")
-		)
-		(pin "5"
-			(uuid "49d3e46f-c329-4756-94d3-b7715a9e2fc0")
-		)
-		(pin "6"
-			(uuid "1d2ef7b3-9b7c-4d7b-99ed-a017e44f5ad2")
-		)
-		(pin "9"
-			(uuid "3fe243e8-0d86-4389-8fbe-cd4ab57fda66")
-		)
-		(pin "8"
-			(uuid "088926b2-291e-4776-a8f1-eed05cbf7326")
-		)
-		(pin "11"
-			(uuid "da294b9a-9384-4d29-80a4-ce4ebf901b48")
-		)
-		(pin "10"
-			(uuid "9f266289-add4-409d-9fdd-6e411ce75498")
-		)
-		(pin "13"
-			(uuid "586f280c-e649-42fa-8ae4-960d5599d135")
-		)
-		(pin "12"
-			(uuid "c6383d10-22a5-46cf-a9ba-b200ee8718f4")
-		)
-		(pin "14"
-			(uuid "caad9ed8-7f55-4e09-86c7-c4f99920822b")
-		)
-		(pin "7"
-			(uuid "2cd7c5e9-9a32-467e-8390-2e51e21f4368")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U608")
-					(unit 5)
 				)
 			)
 		)
