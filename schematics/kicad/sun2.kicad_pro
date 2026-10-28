@@ -440,6 +440,10 @@
     [
       "7153c171-e6a5-40f1-bd07-288a1f1a2f2f",
       "ADDRS_BUFFERS"
+    ],
+    [
+      "0036762d-2e0d-4a0b-9274-00609362618e",
+      "CONNECTORS"
     ]
   ],
   "text_variables": {}
