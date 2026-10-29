@@ -63467,6 +63467,17 @@
 		)
 		(uuid "186c13f2-3960-4656-8813-1e142cdaf774")
 	)
+	(hierarchical_label "P2.DIU"
+		(shape output)
+		(at 142.24 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1938d6e8-1f92-4103-a6d9-b4f50e1d2a63")
+	)
 	(hierarchical_label "ROPCYC\\"
 		(shape output)
 		(at 96.52 148.59 0)
@@ -63587,6 +63598,17 @@
 			(justify right)
 		)
 		(uuid "46930b02-6a02-4835-91a4-fbb0d56aac74")
+	)
+	(hierarchical_label "P2.DIL"
+		(shape output)
+		(at 142.24 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "46b87635-90b9-42c8-b62c-64773425818c")
 	)
 	(hierarchical_label "P2.RAS\\"
 		(shape output)
