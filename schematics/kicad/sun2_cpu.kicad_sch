@@ -13496,7 +13496,7 @@
 		(uuid "e296c237-e7ab-4196-a81c-bf76f4b67b33")
 	)
 	(hierarchical_label "POR\\"
-		(shape input)
+		(shape output)
 		(at 57.15 44.45 180)
 		(effects
 			(font
