@@ -9581,6 +9581,42 @@
 		(color 0 0 0 0)
 		(uuid "ecef5684-361e-4877-abba-024c4cf49c39")
 	)
+	(no_connect
+		(at 242.57 135.89)
+		(uuid "0b87d4e3-aef2-4570-955e-ccdbe5a3041a")
+	)
+	(no_connect
+		(at 242.57 148.59)
+		(uuid "7b529056-9bfa-4aba-a5f0-fa8c7d9450c0")
+	)
+	(no_connect
+		(at 241.3 123.19)
+		(uuid "a80232c0-55c8-49de-ada8-d76208b3bb5e")
+	)
+	(no_connect
+		(at 252.73 148.59)
+		(uuid "aa012624-1783-4790-b515-4db4430693fc")
+	)
+	(no_connect
+		(at 241.3 115.57)
+		(uuid "cd3e678c-1ebb-4a87-948e-df7017489430")
+	)
+	(no_connect
+		(at 241.3 118.11)
+		(uuid "de49622a-a3f0-4275-bf47-8ccf48885c83")
+	)
+	(no_connect
+		(at 241.3 120.65)
+		(uuid "e92ff45c-aaa5-4507-96da-6d2bd3de60e1")
+	)
+	(no_connect
+		(at 256.54 119.38)
+		(uuid "f7c69ed3-75ba-437f-8c18-2482a0913e00")
+	)
+	(no_connect
+		(at 252.73 135.89)
+		(uuid "fc3ab957-5212-4bc5-b91f-e8b365a6a6b6")
+	)
 	(bus_entry
 		(at 165.1 24.13)
 		(size -2.54 2.54)
@@ -14285,121 +14321,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74F04")
-		(at 233.68 222.25 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "179b1763-e941-4ed6-b819-0deac0c901a4")
-		(property "Reference" "U115"
-			(at 237.49 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74F04"
-			(at 237.49 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 233.68 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f04.pdf"
-			(at 233.68 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "HEX Inverter"
-			(at 233.68 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F04N/373668"
-			(at 233.68 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "14"
-			(uuid "60fa5f38-f76a-4855-adca-44a8dce6e79d")
-		)
-		(pin "13"
-			(uuid "60fe9326-c895-4c7a-988b-b9bb4af676d0")
-		)
-		(pin "7"
-			(uuid "b6edff0c-b552-4a63-9d26-81014efb7d34")
-		)
-		(pin "3"
-			(uuid "d6404268-3824-4fb6-a74c-4ac2dd120e11")
-		)
-		(pin "4"
-			(uuid "df744df2-8d6b-48e1-8b49-c9accaaa045e")
-		)
-		(pin "5"
-			(uuid "3280e6d2-3b39-4517-835d-2f10859ac7ab")
-		)
-		(pin "8"
-			(uuid "b89f0aa6-a9b7-476a-80fd-08e2bf5adef7")
-		)
-		(pin "9"
-			(uuid "e57a6b4f-e8be-4eab-b418-a519f9afca82")
-		)
-		(pin "6"
-			(uuid "bbf382f8-94b6-4ee8-8258-7d1605932a5a")
-		)
-		(pin "11"
-			(uuid "e2b822be-9300-40a6-bc30-21244cd80f46")
-		)
-		(pin "12"
-			(uuid "64972025-9293-4939-9e45-667bb63123b4")
-		)
-		(pin "1"
-			(uuid "8a7c9624-2137-4245-9514-85dd3041ac4b")
-		)
-		(pin "2"
-			(uuid "a32a4dbb-e34a-4423-93a8-6dc23b384835")
-		)
-		(pin "10"
-			(uuid "8fbc9af6-e10e-4f6d-83f9-c5f3901f8859")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U115")
-					(unit 7)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "74F04_2")
 		(lib_id "sun2:74F04")
 		(at 195.58 111.76 0)
@@ -14514,7 +14435,7 @@
 	)
 	(symbol
 		(lib_id "sun2:7406")
-		(at -7.62 93.98 0)
+		(at 246.38 130.81 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14523,7 +14444,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f169c4e-fb93-40df-a206-6158734aa2f6")
 		(property "Reference" "U122"
-			(at -6.35 91.44 0)
+			(at 247.65 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14531,7 +14452,7 @@
 			)
 		)
 		(property "Value" "7406"
-			(at -6.35 93.98 0)
+			(at 247.65 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14539,7 +14460,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -7.62 93.98 0)
+			(at 246.38 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14548,7 +14469,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn7406.pdf"
-			(at -7.62 93.98 0)
+			(at 246.38 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14557,7 +14478,7 @@
 			)
 		)
 		(property "Description" "HEX Inverter Buffer"
-			(at -7.62 93.98 0)
+			(at 246.38 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14566,7 +14487,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN7406N/277081"
-			(at -7.62 93.98 0)
+			(at 246.38 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14740,7 +14661,7 @@
 	)
 	(symbol
 		(lib_id "sun2:7407")
-		(at -6.35 107.95 0)
+		(at 246.38 143.51 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14749,7 +14670,7 @@
 		(fields_autoplaced yes)
 		(uuid "27916aff-f464-4077-a243-996e36625305")
 		(property "Reference" "U110"
-			(at -5.08 105.41 0)
+			(at 247.65 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14757,7 +14678,7 @@
 			)
 		)
 		(property "Value" "7407"
-			(at -5.08 107.95 0)
+			(at 247.65 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14765,7 +14686,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at -6.35 107.95 0)
+			(at 246.38 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14774,7 +14695,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn7407.pdf"
-			(at -6.35 107.95 0)
+			(at 246.38 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14783,7 +14704,7 @@
 			)
 		)
 		(property "Description" "HEX Buffer"
-			(at -6.35 107.95 0)
+			(at 246.38 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14792,7 +14713,7 @@
 			)
 		)
 		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN7407N/277082"
-			(at -6.35 107.95 0)
+			(at 246.38 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15082,121 +15003,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:74F74")
-		(at 186.69 234.95 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35929bbf-1d32-4084-adec-d26eaae6cc3f")
-		(property "Reference" "U206"
-			(at 187.96 234.3149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74F74"
-			(at 187.96 236.8549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 186.69 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f74.pdf"
-			(at 186.69 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual D Flip-flop, Set & Reset"
-			(at 186.69 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F74N/277204"
-			(at 186.69 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "095638e1-a145-415b-b392-79548eb0983b")
-		)
-		(pin "14"
-			(uuid "b3251c25-5914-4995-8472-71846bf7ed6f")
-		)
-		(pin "13"
-			(uuid "d1b5676d-9a08-40db-8926-1e1e80e4afbd")
-		)
-		(pin "10"
-			(uuid "4ba902a4-b82d-464d-b4b0-15a059a2252d")
-		)
-		(pin "9"
-			(uuid "6a6f7212-121d-4ed3-91f1-a326ed06f080")
-		)
-		(pin "8"
-			(uuid "24fef5dc-2b58-46b5-adef-348b752865c6")
-		)
-		(pin "5"
-			(uuid "9b57cb6d-2077-4854-a6b9-27ec231f72b3")
-		)
-		(pin "1"
-			(uuid "20f06415-411a-4848-8423-50f5dd8f9434")
-		)
-		(pin "4"
-			(uuid "1360eb07-2147-48b5-af8b-dbe51699d71f")
-		)
-		(pin "3"
-			(uuid "095b4c10-fd52-4838-9f58-842c092fdf64")
-		)
-		(pin "2"
-			(uuid "b99427b8-8849-4964-a399-145ab969df6d")
-		)
-		(pin "12"
-			(uuid "7a2b0866-89c6-46c7-8849-11d0f1c4ba1e")
-		)
-		(pin "6"
-			(uuid "c8e35750-73be-4755-bbc7-28d0b16ecd3f")
-		)
-		(pin "11"
-			(uuid "7e6d68bb-4db8-47e3-b021-c0b424c80bcb")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U206")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 52.07 39.37 90)
 		(unit 1)
@@ -15373,242 +15179,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U115")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74F251")
-		(at 220.98 232.41 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "442f7b9d-07cd-4701-800e-7d2f55cf02c7")
-		(property "Reference" "U111"
-			(at 227.33 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74F251"
-			(at 227.33 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
-			(at 220.98 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f251b.pdf"
-			(at 220.98 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1-of-8 Data Selectors with 3-state output"
-			(at 220.98 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F251BN/1570198"
-			(at 220.98 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "fd701388-c343-40b5-82b8-36aba845d29a")
-		)
-		(pin "16"
-			(uuid "0c339622-ac91-4a04-be91-c6883811935d")
-		)
-		(pin "8"
-			(uuid "8bd73598-2f27-4f95-b554-503571e6dcb2")
-		)
-		(pin "1"
-			(uuid "5af24b1e-4d90-4223-be4c-8a0e411ee129")
-		)
-		(pin "2"
-			(uuid "e810fcfd-f20b-4bdc-a35a-51dbf8a2a9ff")
-		)
-		(pin "3"
-			(uuid "c54bab93-3175-4c6f-a4d1-ed21fc3203d9")
-		)
-		(pin "15"
-			(uuid "b7592f5f-01f3-4330-bf14-289647a1ed36")
-		)
-		(pin "12"
-			(uuid "ab662cb5-4cc4-4d32-b157-09d0a0ec906e")
-		)
-		(pin "11"
-			(uuid "8e3930cf-f8f2-45a2-915a-450d4e8bb3a7")
-		)
-		(pin "13"
-			(uuid "d4c670bd-a3ab-4844-8d59-dd300817a5e8")
-		)
-		(pin "10"
-			(uuid "0b4f67e1-c460-49dd-b953-e7fc6bafacf2")
-		)
-		(pin "9"
-			(uuid "3be2392c-11d8-4389-9d3c-f3b778e27f06")
-		)
-		(pin "7"
-			(uuid "e5e7911a-c10c-403f-afd1-7d772bf22875")
-		)
-		(pin "5"
-			(uuid "feee4871-40b9-4896-83ef-4785c4e9828e")
-		)
-		(pin "14"
-			(uuid "de474fcb-f7f8-470d-b6f9-9067106d843e")
-		)
-		(pin "4"
-			(uuid "43fc46f5-caf1-4d15-a7ca-08498c5913fe")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U111")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:7407")
-		(at 204.47 222.25 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48e8a031-34d8-4ee6-8d17-203e556adfb0")
-		(property "Reference" "U110"
-			(at 208.28 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "7407"
-			(at 208.28 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 204.47 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn7407.pdf"
-			(at 204.47 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "HEX Buffer"
-			(at 204.47 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN7407N/277082"
-			(at 204.47 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "85252b88-2a02-48fc-95e6-16a30f5fae77")
-		)
-		(pin "9"
-			(uuid "c4fd9e6c-e583-4ada-8729-37d957d2ab64")
-		)
-		(pin "2"
-			(uuid "4f7d9c9b-3898-4bb4-bf47-6b04dc2f0944")
-		)
-		(pin "1"
-			(uuid "6bfc3d0a-fb62-436c-9c94-35af52f5f949")
-		)
-		(pin "3"
-			(uuid "9b65c524-1f60-4995-a57e-2f9aa63e3164")
-		)
-		(pin "4"
-			(uuid "775ff993-16d2-4b5e-9145-d815e248e631")
-		)
-		(pin "5"
-			(uuid "16849732-f061-4641-94d9-49d6fcaa9502")
-		)
-		(pin "8"
-			(uuid "6ace30ca-6e54-49ad-a0a4-ac1fbb223310")
-		)
-		(pin "10"
-			(uuid "bf5ffd10-fab2-4baa-8416-016d7461e3b7")
-		)
-		(pin "11"
-			(uuid "7af901da-cb73-44b2-943d-6342cf12c8a0")
-		)
-		(pin "12"
-			(uuid "d9eb83cc-a35b-4eca-be7c-d96386c9f9c9")
-		)
-		(pin "13"
-			(uuid "6192de3d-b1e7-4b89-801b-60b4f87fa9a4")
-		)
-		(pin "14"
-			(uuid "44ff7951-234b-439b-ac4b-d3fad4ea9a22")
-		)
-		(pin "7"
-			(uuid "3df6ba9a-197e-4de7-b2a9-c6a05c4abf12")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U110")
-					(unit 7)
 				)
 			)
 		)
@@ -16127,121 +15697,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U122")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74F08")
-		(at 246.38 234.95 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cad67b1-02a8-47eb-97fd-6562f477e046")
-		(property "Reference" "U109"
-			(at 247.65 234.3149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74F08"
-			(at 247.65 236.8549 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 246.38 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f08.pdf"
-			(at 246.38 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 246.38 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F08N/373669"
-			(at 246.38 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "b1b2790b-80a8-4ac5-8b42-4e97d7b356fc")
-		)
-		(pin "5"
-			(uuid "3b69764b-d75f-4510-88c2-d6a5e08754cf")
-		)
-		(pin "4"
-			(uuid "115c32e6-c2df-4123-8333-a43cd0463328")
-		)
-		(pin "10"
-			(uuid "54fef2cb-513a-47d8-a8a4-d0ebb6d1854b")
-		)
-		(pin "11"
-			(uuid "43bab885-f97f-4610-be5f-80a583b3b9d4")
-		)
-		(pin "13"
-			(uuid "2478bf62-7ae8-4071-8fdc-af182716a487")
-		)
-		(pin "12"
-			(uuid "775c7ebe-bf88-4a81-b1e8-6584e1bbc47d")
-		)
-		(pin "8"
-			(uuid "1d665398-a7e1-492b-b6fa-045f7321aa24")
-		)
-		(pin "6"
-			(uuid "2aa8d58d-65de-4eeb-885e-c15b52f75f79")
-		)
-		(pin "14"
-			(uuid "ac529b34-8df1-4574-aedc-92ffb1271e3c")
-		)
-		(pin "9"
-			(uuid "2cb597d2-1f4c-4be9-b5df-b6a6c4e82222")
-		)
-		(pin "2"
-			(uuid "aa9d939d-a0a4-4483-b6de-44dbeb4deb3a")
-		)
-		(pin "1"
-			(uuid "1aa3d249-85d5-493e-9431-74ef76aaf896")
-		)
-		(pin "3"
-			(uuid "e28f3330-6232-43b0-8bb3-52a2701b56f3")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U109")
-					(unit 5)
 				)
 			)
 		)
@@ -17214,106 +16669,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74LS20")
-		(at 271.78 234.95 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8324cbf1-cd13-4304-9e98-e295a57e18a2")
-		(property "Reference" "U114"
-			(at 278.13 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS20"
-			(at 278.13 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 271.78 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS20"
-			(at 271.78 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 4-input NAND"
-			(at 271.78 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "14"
-			(uuid "3eea55b9-dc35-4ccb-9e9e-b6d6d708b494")
-		)
-		(pin "7"
-			(uuid "c3c09fe8-a4e8-4d53-9de8-bb6f478b60a0")
-		)
-		(pin "13"
-			(uuid "18467f91-ef3d-401d-ade6-3f35eedfdfd4")
-		)
-		(pin "4"
-			(uuid "50c62ea4-8d48-4d65-a183-b94310fa9003")
-		)
-		(pin "12"
-			(uuid "60ecb099-5ab3-471e-9771-58bcc09eb9ff")
-		)
-		(pin "8"
-			(uuid "9d22676a-a7dd-4840-8f3b-70152107183e")
-		)
-		(pin "6"
-			(uuid "0066e607-a426-4bea-84d5-2fb01ac3ca80")
-		)
-		(pin "5"
-			(uuid "114d2e74-b26a-43bc-a7ea-7283dd4cab20")
-		)
-		(pin "1"
-			(uuid "f958d3a2-9934-4791-a620-ae797b872223")
-		)
-		(pin "2"
-			(uuid "368ceee0-09c3-459c-84f8-0d3c7b449472")
-		)
-		(pin "10"
-			(uuid "21474951-d4be-4ed1-9fec-c05c28825691")
-		)
-		(pin "9"
-			(uuid "41bd37e9-30c1-4fdb-b8ef-3d7a2853584e")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U114")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "sun2:7406")
 		(at 191.77 160.02 0)
 		(unit 1)
@@ -17426,121 +16781,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sun2:7406")
-		(at 214.63 222.25 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ab89b72-a75c-4c7e-9aec-b4a71ec66da6")
-		(property "Reference" "U122"
-			(at 218.44 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "7406"
-			(at 218.44 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 214.63 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn7406.pdf"
-			(at 214.63 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "HEX Inverter Buffer"
-			(at 214.63 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN7406N/277081"
-			(at 214.63 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "b1161d09-1cfe-445a-b80b-0d076258ff2e")
-		)
-		(pin "11"
-			(uuid "a80f435e-7574-47c4-a231-01fdcb7d2812")
-		)
-		(pin "2"
-			(uuid "3fcc7e86-2c77-49ab-bf2e-602871b1c976")
-		)
-		(pin "1"
-			(uuid "83344472-a64a-4d09-a867-52dcb449bbc4")
-		)
-		(pin "13"
-			(uuid "2911012a-62ab-4edc-b6ff-ce70a76e3a05")
-		)
-		(pin "14"
-			(uuid "67092e41-6f3b-4dbc-ba80-8fa5cbbe2546")
-		)
-		(pin "12"
-			(uuid "dfaa4a21-3a47-4d47-8846-fe0cb3d83dc7")
-		)
-		(pin "7"
-			(uuid "3dcfe6ae-a6d4-4abb-8a8c-c30f1d184ffc")
-		)
-		(pin "4"
-			(uuid "3013b660-6bae-4a88-bcc3-29875d71fef5")
-		)
-		(pin "3"
-			(uuid "95ae8e00-68bc-48e5-a72a-af6419cd1ae4")
-		)
-		(pin "6"
-			(uuid "ebd20d93-1ab1-44f3-91e4-6c2904404ca7")
-		)
-		(pin "5"
-			(uuid "651c1543-b0e0-4b24-bf29-5822a68878cd")
-		)
-		(pin "9"
-			(uuid "0086a75c-c72a-48d5-8d79-cd147ebfc081")
-		)
-		(pin "8"
-			(uuid "5e6b13ad-82e4-4ae3-9e9f-e7d4d39127c9")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U122")
-					(unit 7)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Network09_US")
 		(at 248.92 62.23 270)
 		(unit 1)
@@ -17634,7 +16874,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS20")
-		(at -6.35 60.96 0)
+		(at 248.92 119.38 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17643,7 +16883,7 @@
 		(fields_autoplaced yes)
 		(uuid "a55cb79b-adfa-4c19-a684-56bd420193b4")
 		(property "Reference" "U114"
-			(at -6.3597 52.07 0)
+			(at 248.9103 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17651,7 +16891,7 @@
 			)
 		)
 		(property "Value" "74LS20"
-			(at -6.3597 54.61 0)
+			(at 248.9103 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17659,7 +16899,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at -6.35 60.96 0)
+			(at 248.92 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17668,7 +16908,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS20"
-			(at -6.35 60.96 0)
+			(at 248.92 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17677,7 +16917,7 @@
 			)
 		)
 		(property "Description" "Dual 4-input NAND"
-			(at -6.35 60.96 0)
+			(at 248.92 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19200,120 +18440,6 @@
 				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
 					(reference "U114")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sun2:74F00")
-		(at 256.54 234.95 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ef170877-2025-4207-8bf4-827019450a3b")
-		(property "Reference" "U102"
-			(at 258.064 234.188 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74F00"
-			(at 258.064 236.728 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 256.54 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74f00.pdf"
-			(at 256.54 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 256.54 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order Link" "https://www.digikey.com/en/products/detail/texas-instruments/SN74F00N/373665"
-			(at 256.54 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "fd67db8a-ee45-4fb5-84ca-66362e34b521")
-		)
-		(pin "9"
-			(uuid "3518a8a0-7355-4b9c-b688-19cd44334683")
-		)
-		(pin "5"
-			(uuid "0a43eb7c-db64-4669-8136-6fb2a19963e1")
-		)
-		(pin "6"
-			(uuid "9057b4f9-719e-44b4-b518-0c517acd2912")
-		)
-		(pin "13"
-			(uuid "49209206-f041-46eb-b931-fc4bfba67dd5")
-		)
-		(pin "11"
-			(uuid "bd34b7bf-89f7-4ac6-9561-6837fddf4895")
-		)
-		(pin "3"
-			(uuid "59f83854-6020-4175-95f1-860b12625e12")
-		)
-		(pin "1"
-			(uuid "5315a094-f027-4be2-863a-331a3c5a78b7")
-		)
-		(pin "2"
-			(uuid "8e2a608f-628f-45c0-aea0-5aca3808ac58")
-		)
-		(pin "12"
-			(uuid "a5ff7a6e-fda2-4ca8-8799-1121015bd6a5")
-		)
-		(pin "10"
-			(uuid "e9fea945-3383-4c40-94f5-2e2ca3d0687c")
-		)
-		(pin "8"
-			(uuid "f1b45289-5f01-4249-967b-9ad066bfffcf")
-		)
-		(pin "14"
-			(uuid "afa3b1b8-5a77-457d-be9c-9e1758b0af36")
-		)
-		(pin "7"
-			(uuid "0853b4a7-15db-4029-b489-f154b433c738")
-		)
-		(instances
-			(project ""
-				(path "/67ee2072-0b57-4a50-8537-b17b5f651e89/2d3d381d-4c8b-4bfc-8adc-91fc2fe1e9d0"
-					(reference "U102")
-					(unit 5)
 				)
 			)
 		)

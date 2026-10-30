@@ -645,6 +645,10 @@
     [
       "0036762d-2e0d-4a0b-9274-00609362618e",
       "CONNECTORS"
+    ],
+    [
+      "8f1c8a72-97e7-46bf-a4c9-b87b7a1a1f7c",
+      "PASSIVES"
     ]
   ],
   "text_variables": {}
