@@ -183369,7 +183369,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sun2:P2"
 			(at 0 0 0)
 			(effects
 				(font

@@ -3400,7 +3400,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "sun2:P2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -12417,6 +12417,50 @@
 			)
 		)
 	)
+	(global_label "POR\\"
+		(shape input)
+		(at 27.94 170.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6a46e20a-9ce4-4f43-aa52-4928e5381e4b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.2376 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P.HALT\\"
+		(shape input)
+		(at 27.94 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bce79880-cb63-47a7-9025-77a7eabf6263")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 17.8185 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "P2.DIL"
 		(shape input)
 		(at 227.33 62.23 180)
@@ -12945,17 +12989,6 @@
 		)
 		(uuid "aad41132-f3bc-4f95-8917-ad61da08f6b2")
 	)
-	(hierarchical_label "POR\\"
-		(shape input)
-		(at 27.94 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aec7ddea-cb04-47d2-b0e9-7b28f772e762")
-	)
 	(hierarchical_label "P2.R{slash}W\\"
 		(shape input)
 		(at 234.95 82.55 0)
@@ -13131,17 +13164,6 @@
 			(justify left)
 		)
 		(uuid "f27b11e0-7f8f-4da0-ab5d-abebf1d4a956")
-	)
-	(hierarchical_label "P.HALT\\"
-		(shape input)
-		(at 27.94 175.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f767670b-9071-4615-92a5-f89f328d7947")
 	)
 	(symbol
 		(lib_id "sun2:Connector_2x43")
@@ -15058,7 +15080,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x30_P2.54mm_Vertical_SMD"
+		(property "Footprint" "sun2:P2"
 			(at 231.14 17.78 0)
 			(effects
 				(font

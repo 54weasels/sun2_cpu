@@ -63720,6 +63720,50 @@
 			)
 		)
 	)
+	(global_label "P.UDS\\"
+		(shape input)
+		(at 139.7 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8358772d-1f51-4378-8b58-ce74ecba08a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.1833 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P.AS\\"
+		(shape input)
+		(at 168.91 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8afd5af1-7fb0-42e1-98a4-f01a8d6b1aae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.9052 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "P.FC2"
 		(shape input)
 		(at 52.07 147.32 180)
@@ -63733,6 +63777,28 @@
 		(uuid "8eea6466-8298-4854-af4f-c7954542bd5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 43.6419 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P.LDS\\"
+		(shape input)
+		(at 139.7 148.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b58304f7-b35d-4011-9041-bce21845baad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.4857 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63840,17 +63906,6 @@
 			(justify left)
 		)
 		(uuid "08de2814-068f-4f60-96b9-f8e2d012a6a2")
-	)
-	(hierarchical_label "P.UDS\\"
-		(shape input)
-		(at 139.7 158.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "08f170b4-65c3-4323-bc2f-0f898d222253")
 	)
 	(hierarchical_label "RD.RAM\\"
 		(shape input)
@@ -63975,17 +64030,6 @@
 			(justify left)
 		)
 		(uuid "41656c10-5a0c-4c21-8a86-1d04d20be459")
-	)
-	(hierarchical_label "P.LDS\\"
-		(shape input)
-		(at 139.7 148.59 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42f15ef4-1a4c-4207-9f2e-e909b5ca2c85")
 	)
 	(hierarchical_label "P2.WAIT\\"
 		(shape input)
@@ -64142,17 +64186,6 @@
 			(justify right)
 		)
 		(uuid "c08e0fe7-ae5e-4382-a2d4-eec4c9c5fa9f")
-	)
-	(hierarchical_label "P.AS\\"
-		(shape input)
-		(at 168.91 142.24 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c3fc1e1d-2518-4ec7-bac3-aa1562bc3e87")
 	)
 	(hierarchical_label "WR.ROP\\"
 		(shape input)

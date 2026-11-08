@@ -23593,6 +23593,28 @@
 			)
 		)
 	)
+	(global_label "POR\\"
+		(shape input)
+		(at 191.77 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3dd4c0d6-df9d-44d4-afd0-a63649eac007")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.0676 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "R\\{slash}W"
 		(shape input)
 		(at 25.4 39.37 180)
@@ -23889,17 +23911,6 @@
 			(justify left)
 		)
 		(uuid "1491992d-1e1f-4880-94f0-825a837aff7f")
-	)
-	(hierarchical_label "POR\\"
-		(shape input)
-		(at 191.77 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "19a9855d-e542-4849-a3ba-f94bb10efa10")
 	)
 	(hierarchical_label "PARERRL\\"
 		(shape input)

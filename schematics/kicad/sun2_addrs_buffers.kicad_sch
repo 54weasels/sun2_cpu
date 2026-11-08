@@ -29695,6 +29695,28 @@
 			)
 		)
 	)
+	(global_label "P.LDS\\"
+		(shape input)
+		(at 46.99 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a9550709-9e22-4b9c-8b72-d98bd038f568")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.7757 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C.S6\\"
 		(shape input)
 		(at 31.75 162.56 180)
@@ -29761,6 +29783,28 @@
 			)
 		)
 	)
+	(global_label "LDS"
+		(shape input)
+		(at 21.59 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bec055b7-373f-4e28-ae9c-77e0e62f3e48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 15.0972 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "P.A[1..23]"
 		(shape input)
 		(at 29.21 25.4 180)
@@ -29801,6 +29845,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UDS"
+		(shape input)
+		(at 21.59 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dabe4eda-ad0f-4d1b-8b80-deb839abcbe7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.7948 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -29916,17 +29982,6 @@
 		)
 		(uuid "508646bb-6ff3-4474-9dc4-24f7c885a69f")
 	)
-	(hierarchical_label "UDS"
-		(shape input)
-		(at 21.59 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "59bd29c9-041a-481c-bf39-81a24d4e2db3")
-	)
 	(hierarchical_label "P1.IOWC\\"
 		(shape output)
 		(at 165.1 191.77 0)
@@ -30003,17 +30058,6 @@
 			(justify left)
 		)
 		(uuid "9136fa53-88fb-4123-a7d1-aeed83176adf")
-	)
-	(hierarchical_label "P.LDS\\"
-		(shape input)
-		(at 46.99 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "94a1ae9b-9987-4c3d-848a-c17010ece78a")
 	)
 	(hierarchical_label "P1TOP\\"
 		(shape input)
@@ -30136,17 +30180,6 @@
 			(justify right)
 		)
 		(uuid "d6da9e4c-0200-4ef9-bd63-294ed16e957c")
-	)
-	(hierarchical_label "LDS"
-		(shape input)
-		(at 21.59 125.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d73fa639-961e-4b86-aebf-76078947bd73")
 	)
 	(hierarchical_label "MWTC\\"
 		(shape input)
