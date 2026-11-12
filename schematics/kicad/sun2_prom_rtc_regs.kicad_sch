@@ -22228,6 +22228,16 @@
 		)
 		(uuid "02ca8283-6423-492c-b531-7a6ddc266ae4")
 	)
+	(label "RD.IO\\"
+		(at 50.8 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07e33f53-d6e1-48ad-ad4c-48f1caa782b5")
+	)
 	(label "VCC"
 		(at 25.4 133.35 180)
 		(effects
@@ -23170,6 +23180,16 @@
 		)
 		(uuid "b9dc0255-3ca5-418a-81de-4e507d1083bf")
 	)
+	(label "WR.IO\\"
+		(at 50.8 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba04a667-f057-4a2e-b0dc-e6273eb7622d")
+	)
 	(label "P.D2"
 		(at 91.44 163.83 0)
 		(effects
@@ -23571,6 +23591,28 @@
 		)
 		(uuid "fded6d18-6ed2-4b06-bd52-b38bd6dccce7")
 	)
+	(global_label "INIT\\"
+		(shape input)
+		(at 93.98 195.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2a327e2b-e7fb-4431-b56a-b302f6018351")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.6404 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "P.D[0..15]"
 		(shape bidirectional)
 		(at 26.67 200.66 180)
@@ -23606,6 +23648,28 @@
 		(uuid "3dd4c0d6-df9d-44d4-afd0-a63649eac007")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 184.0676 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DS\\"
+		(shape input)
+		(at 25.4 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "407e4860-1a89-453b-a5d9-19a96aa4a6d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 19.0886 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23791,6 +23855,28 @@
 			)
 		)
 	)
+	(global_label "TIMEOUT\\"
+		(shape input)
+		(at 72.39 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec98eb15-8c9c-4ad7-8100-4d890fb97e5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.7567 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C.S4\\"
 		(shape input)
 		(at 68.58 171.45 180)
@@ -23957,17 +24043,6 @@
 		)
 		(uuid "35a6bf35-b134-4f2e-b482-437b2d61e349")
 	)
-	(hierarchical_label "TIMEOUT\\"
-		(shape input)
-		(at 72.39 163.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3b872fc6-7b8c-49cd-82ab-c1bc37fe4336")
-	)
 	(hierarchical_label "EN.PARERR"
 		(shape bidirectional)
 		(at 118.11 166.37 0)
@@ -24002,17 +24077,6 @@
 		)
 		(uuid "4d0fcdd8-5315-4fbb-a1c0-ea1656a32e6d")
 	)
-	(hierarchical_label "RD.IO\\"
-		(shape output)
-		(at 50.8 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "50def34d-5db2-4477-ba60-21f8e5aa3f12")
-	)
 	(hierarchical_label "PARERRU\\"
 		(shape input)
 		(at 72.39 179.07 180)
@@ -24024,17 +24088,6 @@
 			(justify right)
 		)
 		(uuid "5892bae4-3621-48ec-a4d1-e38c71614698")
-	)
-	(hierarchical_label "WR.IO\\"
-		(shape output)
-		(at 50.8 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5a9b17f2-ce9a-4470-9861-49426f7b341b")
 	)
 	(hierarchical_label "AEN\\"
 		(shape input)
@@ -24145,17 +24198,6 @@
 			(justify left)
 		)
 		(uuid "8b442c5a-4c35-4ca3-a737-3a8e1883f16d")
-	)
-	(hierarchical_label "DS\\"
-		(shape input)
-		(at 25.4 49.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8d935ea7-36d1-45a5-bec3-11f57f8d22b6")
 	)
 	(hierarchical_label "RD.RAM\\"
 		(shape output)
@@ -24322,17 +24364,6 @@
 			(justify right)
 		)
 		(uuid "ed4912f5-42e3-416f-981e-c78d7fede7d8")
-	)
-	(hierarchical_label "INIT\\"
-		(shape input)
-		(at 93.98 195.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffa791ad-51b0-4287-9062-c388f5a97bf0")
 	)
 	(symbol
 		(lib_id "Memory_EPROM:27256")

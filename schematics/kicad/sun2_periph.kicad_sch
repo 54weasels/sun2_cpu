@@ -69221,6 +69221,28 @@
 			)
 		)
 	)
+	(global_label "RESET"
+		(shape input)
+		(at 58.42 41.91 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ecdd05b-e57d-4849-b90f-7a5363fbcf69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.1503 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C(100.0-50)"
 		(shape input)
 		(at 40.64 172.72 180)
@@ -69759,17 +69781,6 @@
 			(justify right)
 		)
 		(uuid "fad6cb8f-032b-4daa-b4e6-678fb6c741c4")
-	)
-	(hierarchical_label "RESET"
-		(shape input)
-		(at 58.42 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fae5e3ff-bfef-4aff-b6e9-688f786a144f")
 	)
 	(hierarchical_label "RD.DCP\\"
 		(shape input)

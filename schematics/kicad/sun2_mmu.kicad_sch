@@ -69334,6 +69334,28 @@
 			)
 		)
 	)
+	(global_label "DS\\"
+		(shape input)
+		(at 25.4 187.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41cb35a0-b60e-4aa8-9069-5715e15971ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 19.0886 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "P.FC2"
 		(shape input)
 		(at 147.32 167.64 180)
@@ -69391,6 +69413,28 @@
 		(uuid "4f9c017c-463e-45c7-9f8c-34561783aaee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 18.9072 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P.R{slash}W\\"
+		(shape input)
+		(at 147.32 162.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "540ceb46-5056-459b-9cba-c05e67a343fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.5614 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -69817,28 +69861,6 @@
 			(justify left)
 		)
 		(uuid "430fa140-7cc9-473e-9217-5373dc1ea84e")
-	)
-	(hierarchical_label "P.R{slash}W\\"
-		(shape input)
-		(at 147.32 162.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4aa65e71-6826-4fc1-b61a-b02343d1f7f4")
-	)
-	(hierarchical_label "DS\\"
-		(shape input)
-		(at 25.4 187.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e4af044-7dc6-4768-8643-04e74e47d7de")
 	)
 	(hierarchical_label "P.INTA\\"
 		(shape output)

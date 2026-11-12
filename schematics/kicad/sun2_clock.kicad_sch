@@ -35957,6 +35957,16 @@
 		)
 		(uuid "4f4152d2-88e4-4209-94db-01d350e32aa3")
 	)
+	(label "P1.MRWC\\"
+		(at 49.53 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a0685d8-ac1c-49da-80e4-99bc8a71e0be")
+	)
 	(label "TIMEOUT"
 		(at 194.31 40.64 0)
 		(effects
@@ -36413,16 +36423,6 @@
 		)
 		(uuid "e4ea86bd-6a8e-4f88-b5f4-d0294d061ace")
 	)
-	(label "RREQ\\"
-		(at 236.22 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6c08f8c-345e-4a0f-a690-78d0095e0b83")
-	)
 	(label "GND"
 		(at 222.25 104.14 180)
 		(effects
@@ -36432,6 +36432,16 @@
 			(justify right bottom)
 		)
 		(uuid "f6fdb417-a483-4e0a-9763-f6410cdbde92")
+	)
+	(label "XREQ\\"
+		(at 73.66 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8a07810-5883-4590-bec3-fce9a588185d")
 	)
 	(label "VCC"
 		(at 222.25 111.76 180)
@@ -36453,6 +36463,50 @@
 			(justify right bottom)
 		)
 		(uuid "faebbdad-3d50-4fda-8348-32ff46c4ac9c")
+	)
+	(global_label "INIT\\"
+		(shape output)
+		(at 236.22 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0bb23cbe-5620-42a6-bd3f-e90891f7aca9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.5596 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "P.R{slash}W\\"
+		(shape output)
+		(at 73.66 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15f34122-fdfc-4189-bbca-00cd2c5188c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.4186 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "C(50.0-25)"
 		(shape output)
@@ -36806,6 +36860,28 @@
 			)
 		)
 	)
+	(global_label "TIMEOUT\\"
+		(shape output)
+		(at 236.22 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a95fbc97-3498-498e-a359-04159fcefc20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 247.8533 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "P.HALT\\"
 		(shape input)
 		(at 223.52 50.8 180)
@@ -36971,17 +37047,6 @@
 		)
 		(uuid "102385d0-4d8f-4b29-b09b-c6e4cd8f2659")
 	)
-	(hierarchical_label "TIMEOUT\\"
-		(shape output)
-		(at 236.22 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2769bb8f-7114-4cff-9b4c-dffeee59c562")
-	)
 	(hierarchical_label "PARERR"
 		(shape input)
 		(at 58.42 167.64 180)
@@ -37105,6 +37170,17 @@
 		)
 		(uuid "73d6956a-f63d-4538-824c-ef8c92467506")
 	)
+	(hierarchical_label "RREQ\\"
+		(shape output)
+		(at 236.22 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74c0da46-d270-401d-9651-a22fe2b82001")
+	)
 	(hierarchical_label "MRDC\\"
 		(shape input)
 		(at 57.15 170.18 180)
@@ -37148,17 +37224,6 @@
 			(justify right)
 		)
 		(uuid "7b917c05-793f-4ecd-8060-969206729de3")
-	)
-	(hierarchical_label "XREQ\\"
-		(shape output)
-		(at 73.66 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8ac31e7a-6622-40e0-bd23-d8c798cc2d44")
 	)
 	(hierarchical_label "PROTERR\\"
 		(shape input)
@@ -37237,17 +37302,6 @@
 		)
 		(uuid "a503b08e-6680-4e8b-810c-f8f2107688c6")
 	)
-	(hierarchical_label "INIT\\"
-		(shape output)
-		(at 236.22 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a85ad31e-aa4d-4e78-aeef-e8456c31fd1e")
-	)
 	(hierarchical_label "SAS\\"
 		(shape input)
 		(at 166.37 132.08 180)
@@ -37303,17 +37357,6 @@
 		)
 		(uuid "ca71010c-6edc-4a42-9c4a-3c1410570fbd")
 	)
-	(hierarchical_label "P.R{slash}W\\"
-		(shape output)
-		(at 73.66 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cb0fb58c-8f41-4c0b-a738-7fd583fdcbb5")
-	)
 	(hierarchical_label "IORC\\"
 		(shape input)
 		(at 57.15 172.72 180)
@@ -37335,17 +37378,6 @@
 			(justify right)
 		)
 		(uuid "e12ea188-a999-4873-8bf6-8433aedcef31")
-	)
-	(hierarchical_label "P1.MRWC\\"
-		(shape bidirectional)
-		(at 59.69 157.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec8c59aa-9220-4e24-8037-c161245ed369")
 	)
 	(symbol
 		(lib_id "sun2:74F08")
